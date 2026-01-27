@@ -1,0 +1,970 @@
+//
+//  Localizable.strings
+//  Stats
+//
+//  Created by postylem on 2023/07/26.
+//  Using Swift 5.0.
+//  Running on macOS 13.4.
+//
+//  Copyright © 2024 Serhiy Mytrovtsiy. All rights reserved.
+//
+
+// Modules
+"CPU" = "المعالج";
+
+"Open CPU settings" = "إفتح إعدادات المعالج";
+
+"GPU" = "كرت الشاشة";
+
+"Open GPU settings" = "إفتح إعدادات كرت الشاشة";
+
+"RAM" = "الرام";
+
+"Open RAM settings" = "إفتح إعدادات الرام";
+
+"Disk" = "القرص";
+
+"Open Disk settings" = "فتح إعدادات القرص";
+
+"Sensors" = "الحساسات";
+
+"Open Sensors settings" = "فتح إعدادات الحساسات";
+
+"Network" = "الشبكة";
+
+"Open Network settings" = "فتح إعدادات الشبكة";
+
+"Battery" = "البطارية";
+
+"Open Battery settings" = "فتح إعدادات البطارية";
+
+"Bluetooth" = "بلوتوث";
+
+"Open Bluetooth settings" = "فتح إعدادات البلوتوث";
+
+"Clock" = "الساعة";
+
+"Open Clock settings" = "فتح إعدادات الساعة";
+
+
+// Words
+"Unknown" = "غير معروف";
+
+"Version" = "الإصدار";
+
+"Processor" = "المعالج";
+
+"Memory" = "الرام";
+
+"Graphics" = "الرسومات";
+
+"Close" = "إغلاق";
+
+"Download" = "تحميل";
+
+"Install" = "تثبيت";
+
+"Cancel" = "إلغاء";
+
+"Unavailable" = "غير متوفر";
+
+"Yes" = "نعم";
+
+"No" = "لا";
+
+"Automatic" = "تلقائي";
+
+"Manual" = "يدوي";
+
+"None" = "لا شيء";
+
+"Dots" = "نقاط";
+
+"Arrows" = "سهم";
+
+"Characters" = "حروف";
+
+"Short" = "قصير";
+
+"Long" = "طويل";
+
+"Statistics" = "إحصائيات";
+
+"Max" = "الأقصى";
+
+"Min" = "الأدنى";
+
+"Reset" = "إعادة";
+
+"Alignment" = "المحاذاة";
+
+"Left alignment" = "يسار";
+
+"Center alignment" = "وسط";
+
+"Right alignment" = "يمين";
+
+"Dashboard" = "لوحة التحكم";
+
+"Enabled" = "مفعّل";
+
+"Disabled" = "معطل";
+
+"Silent" = "صامت";
+
+"Units" = "وحدات";
+
+"Fans" = "مراوح";
+
+"Scaling" = "تحجيم";
+
+"Linear" = "خطي";
+
+"Square" = "مربع";
+
+"Cube" = "مكعب";
+
+"Logarithmic" = "لوغاريتمي";
+
+"Fixed scale" = "مقاس ثابت";
+
+"Cores" = "نوى";
+
+"Settings" = "الإعدادات";
+
+"Name" = "الاسم";
+
+"Format" = "التنسيق";
+
+"Turn off" = "إيقاف";
+
+"Normal" = "Normal";
+
+"Warning" = "تحذير";
+
+"Critical" = "حرج";
+
+"Usage" = "الاستخدام";
+
+"2 minutes" = "2 دقائق";
+
+"3 minutes" = "3 دقائق";
+
+"10 minutes" = "10 دقائق";
+
+"Import" = "استيراد";
+
+"Export" = "تصدير";
+
+"Separator" = "Separator";
+
+"Read" = "Read";
+
+"Write" = "Write";
+
+"Frequency" = "Frequency";
+
+"Save" = "Save";
+
+"Run" = "Run";
+
+"Stop" = "Stop";
+
+"Uninstall" = "Uninstall";
+
+"1 sec" = "1 sec";
+
+"2 sec" = "2 sec";
+
+"3 sec" = "3 sec";
+
+"5 sec" = "5 sec";
+
+"10 sec" = "10 sec";
+
+"15 sec" = "15 sec";
+
+"30 sec" = "30 sec";
+
+"60 sec" = "60 sec";
+
+
+// Setup
+"Stats Setup" = "إعدادات الإحصاءات";
+
+"Previous" = "السابق";
+
+"Previous page" = "الصفحة السابقة";
+
+"Next" = "التالي";
+
+"Next page" = "الصفحة التالية";
+
+"Finish" = "إنهاء";
+
+"Finish setup" = "إنهاء الإعداد";
+
+"Welcome to Stats" = "مرحبًا بك في الإحصاءات";
+
+"welcome_message" = "شكراً لاستخدامك Mornits، مراقب مجاني مفتوح المصدر لنظام macOS و Linux عن بعد لشريط القوائم الخاص بك.";
+
+"Start the application automatically when starting your Mac" = "بدء تشغيل التطبيق تلقائيًا عند بدء تشغيل Mac الخاص بك";
+
+"Do not start the application automatically when starting your Mac" = "عدم بدء تشغيل التطبيق تلقائيًا عند بدء تشغيل Mac الخاص بك";
+
+"Do everything silently in the background (recommended)" = "قم بعمل كل شيء بصمت في الخلفية (موصى به)";
+
+"Check for a new version on startup" = "التحقق من وجود إصدار جديد عند التشغيل";
+
+"Check for a new version every day (once a day)" = "التحقق من وجود إصدار جديد كل يوم (مرة واحدة في اليوم)";
+
+"Check for a new version every week (once a week)" = "التحقق من وجود إصدار جديد كل أسبوع (مرة واحدة في الأسبوع)";
+
+"Check for a new version every month (once a month)" = "التحقق من وجود إصدار جديد كل شهر (مرة واحدة في الشهر)";
+
+"Never check for updates (not recommended)" = "عدم التحقق من وجود تحديثات (غير موصى به)";
+
+"Anonymous telemetry for better development decisions" = "معلومات تشخيصية مجهولة لاتخاذ قرارات تطوير أفضل";
+
+"Share anonymous telemetry data" = "مشاركة بيانات التشخيص المجهولة";
+
+"Do not share anonymous telemetry data" = "عدم مشاركة بيانات التشخيص المجهولة";
+
+"The configuration is completed" = "تم الانتهاء من التكوين";
+
+"finish_setup_message" = "كل شيء مُعدّ، الإحصاءات هي أداة مفتوحة المصدر، مجانية وستظل دائمًا كذلك. إذا كنت تستمتع بها يمكنك دعم المشروع، دائمًا محل تقدير!";
+
+
+// Alerts
+"New version available" = "إصدار جديد متاح";
+
+"Click to install the new version of Stats" = "انقر لتثبيت الإصدار الجديد من الإحصاءات";
+
+"Successfully updated" = "تم التحديث بنجاح";
+
+"Stats was updated to v" = "تم تحديث الإحصاءات إلى الإصدار v%0";
+
+"Reset settings text" = "سيتم إعادة ضبط جميع إعدادات التطبيق وسيتم إعادة تشغيل التطبيق. هل تريد المتابعة؟";
+
+"Support text" = "شكرًا لك على استخدامك ل Mornits! \n\nيستغرق الحفاظ على هذا المشروع مفتوح المصدر وتحسينه وقتًا وموارد. دعمكم يساعدنا على الاستمرار في توفير تطبيق مجاني وموثوق للجميع. كل جزء صغير يساعدنا!";
+
+
+// Settings
+"Open Activity Monitor" = "فتح مراقب النشاط";
+
+"Report a bug" = "الإبلاغ عن خطأ";
+
+"Support the application" = "دعم التطبيق";
+
+"Close application" = "إغلاق التطبيق";
+
+"Open application settings" = "فتح إعدادات التطبيق";
+
+"Open dashboard" = "فتح لوحة التحكم";
+
+"No notifications available in this module" = "لا توجد إشعارات متاحة في هذه الوحدة";
+
+"Open Calendar" = "Open Calendar";
+
+"Toggle the module" = "Toggle the module";
+
+
+// Application settings
+"Update application" = "تحديث التطبيق";
+
+"Check for updates" = "التحقق من وجود تحديثات";
+
+"At start" = "عند البدء";
+
+"Once per day" = "مرة يوميًا";
+
+"Once per week" = "مرة أسبوعيًا";
+
+"Once per month" = "مرة شهريًا";
+
+"Never" = "أبدًا";
+
+"Check for update" = "التحقق من وجود تحديث";
+
+"Show icon in dock" = "إظهار الرمز في القائمة";
+
+"Start at login" = "بدء التشغيل عند تسجيل الدخول";
+
+"Build number" = "رقم الإصدار";
+
+"Import settings" = "Import settings";
+
+"Export settings" = "Export settings";
+
+"Reset settings" = "إعادة ضبط الإعدادات";
+
+"Pause the Stats" = "إيقاف الإحصاءات";
+
+"Resume the Stats" = "استئناف الإحصاءات";
+
+"Combined modules" = "الوحدات المجتمعة";
+
+"Combined details" = "Combined details";
+
+"Spacing" = "التباعد";
+
+"Share anonymous telemetry" = "مشاركة بيانات التشخيص المجهولة";
+
+"Choose file" = "Choose file";
+
+"Stress tests" = "Stress tests";
+
+
+// Dashboard
+"Serial number" = "الرقم التسلسلي";
+
+"Model identifier" = "Model identifier";
+
+"Production year" = "Production year";
+
+"Uptime" = "وقت التشغيل";
+
+"Number of cores" = "%0 نوى";
+
+"Number of threads" = "%0 خيوط";
+
+"Number of e-cores" = "%0 نوى كفاءة";
+
+"Number of p-cores" = "%0 نوى أداء";
+
+"Disks" = "Disks";
+
+"Display" = "Display";
+
+
+// Update
+"The latest version of Stats installed" = "تم تثبيت أحدث إصدار من الإحصاءات";
+
+"Downloading..." = "جار التحميل...";
+
+"Current version: " = "الإصدار الحالي:  ";
+
+"Latest version: " = "الإصدار الأحدث:    ";
+
+
+// Widgets
+"Color" = "لون";
+
+"Label" = "تسمية";
+
+"Box" = "مربع";
+
+"Frame" = "إطار";
+
+"Value" = "قيمة";
+
+"Colorize" = "تلوين";
+
+"Colorize value" = "تلوين القيمة";
+
+"Additional information" = "معلومات إضافية";
+
+"Reverse values order" = "عكس ترتيب القيم";
+
+"Base" = "قاعدة";
+
+"Display mode" = "وضع العرض";
+
+"One row" = "صف واحد";
+
+"Two rows" = "صفين";
+
+"Mini widget" = "مصغر";
+
+"Line chart widget" = "مخطط خطي";
+
+"Bar chart widget" = "مخطط شريطي";
+
+"Pie chart widget" = "مخطط دائري";
+
+"Network chart widget" = "مخطط شبكة";
+
+"Speed widget" = "عداد سرعة";
+
+"Battery widget" = "عداد بطارية";
+
+"Stack widget" = "عداد تراكمي";
+
+"Memory widget" = "عداد ذاكرة";
+
+"Static width" = "عرض ثابت";
+
+"Tachometer widget" = "عداد سرعة";
+
+"State widget" = "عداد حالة";
+
+"Text widget" = "Text widget";
+
+"Battery details widget" = "Battery details widget";
+
+"Show symbols" = "إظهار الرموز";
+
+"Label widget" = "تسمية";
+
+"Number of reads in the chart" = "عدد القراءات في المخطط";
+
+"Color of download" = "لون التنزيل";
+
+"Color of upload" = "لون الرفع";
+
+"Monospaced font" = "خط ذو تساوي المسافات";
+
+"Reverse order" = "ترتيب عكسي";
+
+"Chart history" = "مدة المخطط";
+
+"Default color" = "Default";
+
+"Transparent when no activity" = "Transparent when no activity";
+
+"Constant color" = "Constant";
+
+
+// Module Kit
+"Open module settings" = "فتح إعدادات الوحدة";
+
+"Select widget" = "اختيار %0 عنصر";
+
+"Open widget settings" = "فتح إعدادات العنصر";
+
+"Update interval" = "فاصل التحديث";
+
+"Usage history" = "سجل الاستخدام";
+
+"Details" = "التفاصيل";
+
+"Top processes" = "أعلى العمليات";
+
+"Pictogram" = "رمز";
+
+"Module" = "وحدة";
+
+"Widgets" = "عناصر";
+
+"Popup" = "قائمة منبثقة";
+
+"Notifications" = "إشعارات";
+
+"Merge widgets" = "دمج العناصر";
+
+"No available widgets to configure" = "لا توجد عناصر متاحة للتكوين";
+
+"No options to configure for the popup in this module" = "لا توجد خيارات للتكوين للقائمة المنبثقة في هذه الوحدة";
+
+"Process" = "عملية";
+
+"Kill process" = "إيقاف العملية";
+
+"Keyboard shortcut" = "Keyboard shortcut";
+
+"Listening..." = "Listening...";
+
+
+// Modules
+"Number of top processes" = "عدد أعلى العمليات";
+
+"Update interval for top processes" = "فاصل التحديث لأعلى العمليات";
+
+"Notification level" = "مستوى الإشعار";
+
+"Chart color" = "لون المخطط";
+
+"Main chart scaling" = "تحجيم المخطط الرئيسي";
+
+"Scale value" = "قيمة المقياس";
+
+"Text widget value" = "Text widget value";
+
+
+// CPU
+"CPU usage" = "استخدام المعالج";
+
+"CPU temperature" = "حرارة المعالج";
+
+"CPU frequency" = "تردد المعالج";
+
+"System" = "النظام";
+
+"User" = "المستخدم";
+
+"Idle" = "الخمول";
+
+"Show usage per core" = "عرض الاستخدام لكل نواة";
+
+"Show hyper-threading cores" = "عرض نوى التناوب الهجين";
+
+"Split the value (System/User)" = "تقسيم القيمة (نظام/مستخدم)";
+
+"Scheduler limit" = "حد المجدول";
+
+"Speed limit" = "حد السرعة";
+
+"Average load" = "متوسط الحمل";
+
+"1 minute" = "1 دقيقة";
+
+"5 minutes" = "5 دقائق";
+
+"15 minutes" = "15 دقيقة";
+
+"CPU usage threshold" = "عتبة استخدام المعالج";
+
+"CPU usage is" = "استخدام المعالج %0";
+
+"Efficiency cores" = "نوى كفاءة";
+
+"Performance cores" = "نوى أداء";
+
+"System color" = "لون النظام";
+
+"User color" = "لون المستخدم";
+
+"Idle color" = "لون الخمول";
+
+"Cluster grouping" = "تجميع المجموعات";
+
+"Efficiency cores color" = "لون نوى الكفاءة";
+
+"Performance cores color" = "لون نوى الأداء";
+
+"Total load" = "إجمالي الحمل";
+
+"System load" = "حمل النظام";
+
+"User load" = "حمل المستخدم";
+
+"Efficiency cores load" = "حمل نوى الكفاءة";
+
+"Performance cores load" = "حمل نوى الأداء";
+
+"All cores" = "All cores";
+
+
+// GPU
+"GPU to show" = "عرض GPU";
+
+"Show GPU type" = "عرض نوع GPU";
+
+"GPU enabled" = "GPU مُمكّن";
+
+"GPU disabled" = "GPU معطل";
+
+"GPU temperature" = "حرارة GPU";
+
+"GPU utilization" = "استخدام GPU";
+
+"Vendor" = "البائع";
+
+"Model" = "النموذج";
+
+"Status" = "الحالة";
+
+"Active" = "نشط";
+
+"Non active" = "غير نشط";
+
+"Fan speed" = "سرعة المروحة";
+
+"Core clock" = "تردد النواة";
+
+"Memory clock" = "تردد الذاكرة";
+
+"Utilization" = "استخدام";
+
+"Render utilization" = "استخدام الرندر";
+
+"Tiler utilization" = "استخدام اللوح";
+
+"GPU usage threshold" = "عتبة استخدام GPU";
+
+"GPU usage is" = "استخدام GPU %0";
+
+
+// RAM
+"Memory usage" = "استخدام الذاكرة";
+
+"Memory pressure" = "ضغط الذاكرة";
+
+"Total" = "الإجمالي";
+
+"Used" = "المستخدمة";
+
+"App" = "التطبيق";
+
+"Wired" = "المسلكة";
+
+"Compressed" = "المضغوطة";
+
+"Free" = "المتبقية";
+
+"Swap" = "التبادل";
+
+"Split the value (App/Wired/Compressed)" = "تقسيم القيمة (تطبيق/مسلكة/مضغوطة)";
+
+"RAM utilization threshold" = "عتبة استخدام الذاكرة";
+
+"RAM utilization is" = "استخدام الذاكرة %0";
+
+"App color" = "لون التطبيق";
+
+"Wired color" = "لون المسلكة";
+
+"Compressed color" = "لون المضغوطة";
+
+"Free color" = "لون الذاكرة المتبقية";
+
+"Free memory (less than)" = "الذاكرة المتبقية (أقل من)";
+
+"Swap size" = "حجم التبادل";
+
+"Free RAM is" = "الذاكرة العشوائية المتبقية هي %0";
+
+
+// Disk
+"Show removable disks" = "عرض الأقراص القابلة للإزالة";
+
+"Used disk memory" = "%0 من %1 مستخدمة";
+
+"Free disk memory" = "%0 من %1 متبقية";
+
+"Disk to show" = "القرص للعرض";
+
+"Open disk" = "فتح القرص";
+
+"Switch view" = "تبديل العرض";
+
+"Disk utilization threshold" = "عتبة استخدام القرص";
+
+"Disk utilization is" = "استخدام القرص %0";
+
+"Read color" = "لون القراءة";
+
+"Write color" = "لون الكتابة";
+
+"Disk usage" = "استخدام القرص";
+
+"Total read" = "إجمالي القراءة";
+
+"Total written" = "إجمالي الكتابة";
+
+"Write speed" = "Write";
+
+"Read speed" = "Read";
+
+"Drives" = "Drives";
+
+"SMART data" = "SMART data";
+
+
+// Sensors
+"Temperature unit" = "وحدة الحرارة";
+
+"Celsius" = "درجة مئوية";
+
+"Fahrenheit" = "فهرنهايت";
+
+"Save the fan speed" = "حفظ سرعة المروحة";
+
+"Fan" = "مروحة";
+
+"HID sensors" = "مستشعرات HID";
+
+"Synchronize fan's control" = "مزامنة تحكم المروحة";
+
+"Current" = "الحالي";
+
+"Energy" = "الطاقة";
+
+"Show unknown sensors" = "عرض المستشعرات غير المعروفة";
+
+"Install fan helper" = "تثبيت مساعد المروحة";
+
+"Uninstall fan helper" = "إلغاء تثبيت مساعد المروحة";
+
+"Fan value" = "قيمة المروحة";
+
+"Turn off fan" = "إيقاف تشغيل المروحة";
+
+"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "أنت على وشك إيقاف تشغيل المروحة. هذا ليس إجراءً مُوصى به يمكن أن يتسبب في تلف جهازك، هل تريد بالتأكيد القيام بذلك؟";
+
+"Sensor threshold" = "عتبة المستشعر";
+
+"Left fan" = "المروحة اليسرى";
+
+"Right fan" = "المروحة اليمنى";
+
+"Fastest fan" = "أسرع مروحة";
+
+"Sensor to show" = "Sensor to show";
+
+
+// Network
+"Uploading" = "تحميل";
+
+"Downloading" = "تنزيل";
+
+"Public IP" = "عنوان IP العام";
+
+"Local IP" = "عنوان IP المحلي";
+
+"Interface" = "واجهة";
+
+"Physical address" = "العنوان الفيزيائي";
+
+"Refresh" = "تحديث";
+
+"Click to copy public IP address" = "انقر لنسخ عنوان IP العام";
+
+"Click to copy local IP address" = "انقر لنسخ عنوان IP المحلي";
+
+"Click to copy wifi name" = "انقر لنسخ اسم الواي فاي";
+
+"Click to copy mac address" = "انقر لنسخ عنوان MAC";
+
+"No connection" = "لا يوجد اتصال";
+
+"Network interface" = "واجهة الشبكة";
+
+"Total download" = "إجمالي التنزيل";
+
+"Total upload" = "إجمالي الرفع";
+
+"Reader type" = "نوع القارئ";
+
+"Interface based" = "بناءً على الواجهة";
+
+"Processes based" = "بناءً على العمليات";
+
+"Reset data usage" = "إعادة تعيين استخدام البيانات";
+
+"VPN mode" = "وضع VPN";
+
+"Standard" = "قياسي";
+
+"Security" = "أمان";
+
+"Channel" = "قناة";
+
+"Common scale" = "مقياس شائع";
+
+"Autodetection" = "الكشف التلقائي";
+
+"Widget activation threshold" = "عتبة تنشيط الودجة";
+
+"Internet connection" = "اتصال بالإنترنت";
+
+"Active state color" = "لون الحالة النشطة";
+
+"Nonactive state color" = "لون الحالة غير النشطة";
+
+"Connectivity host (ICMP)" = "مضيف الاتصال (ICMP)";
+
+"Leave empty to disable the check" = "اتركه فارغًا لتعطيل الفحص";
+
+"Connectivity history" = "سجل الاتصال";
+
+"Auto-refresh public IP address" = "تحديث تلقائي لعنوان IP العام";
+
+"Every hour" = "كل ساعة";
+
+"Every 12 hours" = "كل 12 ساعة";
+
+"Every 24 hours" = "كل 24 ساعة";
+
+"Network activity" = "نشاط الشبكة";
+
+"Last reset" = "آخر إعادة تعيين منذ %0";
+
+"Latency" = "تأخير";
+
+"Upload speed" = "Upload";
+
+"Download speed" = "Download";
+
+"Address" = "Address";
+
+"WiFi network" = "WiFi network";
+
+"Local IP changed" = "Local IP has changed";
+
+"Public IP changed" = "Public IP has changed";
+
+"Previous IP" = "Previous IP: %0";
+
+"New IP" = "New IP: %0";
+
+"Internet connection lost" = "Internet connection lost";
+
+"Internet connection established" = "Internet connection established";
+
+
+// Battery
+"Level" = "المستوى";
+
+"Source" = "المصدر";
+
+"AC Power" = "تيار متردد";
+
+"Battery Power" = "بطارية";
+
+"Time" = "الوقت";
+
+"Health" = "الصحة";
+
+"Amperage" = "التيار";
+
+"Voltage" = "الجهد";
+
+"Cycles" = "الدورات";
+
+"Temperature" = "درجة الحرارة";
+
+"Power adapter" = "محول الطاقة";
+
+"Power" = "الطاقة";
+
+"Is charging" = "يتم الشحن";
+
+"Time to discharge" = "الوقت للتفريغ";
+
+"Time to charge" = "الوقت للشحن";
+
+"Calculating" = "جاري الحساب";
+
+"Fully charged" = "مشحون بالكامل";
+
+"Not connected" = "غير متصل";
+
+"Low level notification" = "إشعار بالمستوى المنخفض";
+
+"High level notification" = "إشعار بالمستوى العالي";
+
+"Low battery" = "البطارية منخفضة";
+
+"High battery" = "البطارية مرتفعة";
+
+"Battery remaining" = "البطارية تبقى %0%";
+
+"Battery remaining to full charge" = "البطارية تبقى %0% حتى الشحن الكامل";
+
+"Percentage" = "النسبة المئوية";
+
+"Percentage and time" = "النسبة المئوية والوقت";
+
+"Time and percentage" = "الوقت والنسبة المئوية";
+
+"Time format" = "تنسيق الوقت";
+
+"Hide additional information when full" = "إخفاء المعلومات الإضافية عندما تكون ممتلئة";
+
+"Last charge" = "آخر شحن";
+
+"Capacity" = "السعة";
+
+"current / maximum / designed" = "الحالي / الأقصى / المصمم";
+
+"Low power mode" = "وضع الطاقة المنخفضة";
+
+"Percentage inside the icon" = "النسبة المئوية داخل الرمز";
+
+"Colorize battery" = "تلوين البطارية";
+
+"Charging current" = "Charging current";
+
+"Charging Voltage" = "Charging voltage";
+
+"Charger state inside the battery" = "Charger state inside the battery";
+
+
+// Bluetooth
+"Battery to show" = "البطارية المراد عرضها";
+
+"No Bluetooth devices are available" = "لا توجد أجهزة بلوتوث متاحة";
+
+
+// Clock
+"Time zone" = "المنطقة الزمنية";
+
+"Local" = "محلي";
+
+"Calendar" = "Calendar";
+
+"Local time" = "Local time";
+
+"Add new clock" = "Add new clock";
+
+"Delete selected clock" = "Delete selected clock";
+
+"Help with datetime format" = "Help with datetime format";
+
+
+// Colors
+"Based on utilization" = "بناءً على الاستخدام";
+
+"Based on pressure" = "بناءً على الضغط";
+
+"Based on cluster" = "بناءً على التجمع";
+
+"System accent" = "لون النظام";
+
+"Monochrome accent" = "لون مونوكروم";
+
+"Clear" = "واضح";
+
+"White" = "أبيض";
+
+"Black" = "أسود";
+
+"Gray" = "رمادي";
+
+"Second gray" = "رمادي ثانوي";
+
+"Dark gray" = "رمادي داكن";
+
+"Light gray" = "رمادي فاتح";
+
+"Red" = "أحمر";
+
+"Second red" = "أحمر ثانوي";
+
+"Green" = "أخضر";
+
+"Second green" = "أخضر ثانوي";
+
+"Blue" = "أزرق";
+
+"Second blue" = "أزرق ثانوي";
+
+"Yellow" = "أصفر";
+
+"Second yellow" = "أصفر ثانوي";
+
+"Orange" = "برتقالي";
+
+"Second orange" = "برتقالي ثانوي";
+
+"Purple" = "أرجواني";
+
+"Second purple" = "أرجواني ثانوي";
+
+"Brown" = "بني";
+
+"Second brown" = "بني ثانوي";
+
+"Cyan" = "سماوي";
+
+"Magenta" = "قرمزي";
+
+"Pink" = "زهري";
+
+"Teal" = "أزرق مخضر";
+
+"Indigo" = "نيلي";
+
+"Combined processes" = "Combined processes";
+"Used color" = "Used color";

@@ -1,0 +1,970 @@
+//
+//  Localizable.strings
+//  Stats
+//
+//  Created by Marcelo Chaves on 11/11/2020, updated by Pedro Serigatto (@pedroserigatto) on 03/03/2023, updated by Paulo Albuquerque (@paulora2405) on 23/10/2023, updated by Rodrigo Schneider (@SCHrodrigo) on 13/06/2024
+//  Using Swift 5.0.
+//  Running on macOS 10.15.
+//
+//  Copyright © 2020 Marcelo Chaves. All rights reserved.
+//
+
+// Modules
+"CPU" = "CPU";
+
+"Open CPU settings" = "Abrir configurações da CPU";
+
+"GPU" = "GPU";
+
+"Open GPU settings" = "Abrir configurações da GPU";
+
+"RAM" = "RAM";
+
+"Open RAM settings" = "Abrir configurações da RAM";
+
+"Disk" = "Disco";
+
+"Open Disk settings" = "Abrir configurações do Disco";
+
+"Sensors" = "Sensores";
+
+"Open Sensors settings" = "Abrir configurações dos Sensores";
+
+"Network" = "Rede";
+
+"Open Network settings" = "Abrir configurações da Rede";
+
+"Battery" = "Bateria";
+
+"Open Battery settings" = "Abrir configurações da Bateria";
+
+"Bluetooth" = "Bluetooth";
+
+"Open Bluetooth settings" = "Abrir configurações do Bluetooth";
+
+"Clock" = "Relógio";
+
+"Open Clock settings" = "Abrir configurações do Relógio";
+
+
+// Words
+"Unknown" = "Desconhecido";
+
+"Version" = "Versão";
+
+"Processor" = "Processador";
+
+"Memory" = "Memória";
+
+"Graphics" = "Gráficos";
+
+"Close" = "Fechar";
+
+"Download" = "Baixar";
+
+"Install" = "Instalar";
+
+"Cancel" = "Cancelar";
+
+"Unavailable" = "Indisponível";
+
+"Yes" = "Sim";
+
+"No" = "Não";
+
+"Automatic" = "Automático";
+
+"Manual" = "Manual";
+
+"None" = "Nenhum";
+
+"Dots" = "Pontos";
+
+"Arrows" = "Setas";
+
+"Characters" = "Letras";
+
+"Short" = "Curto";
+
+"Long" = "Longo";
+
+"Statistics" = "Estatísticas";
+
+"Max" = "Máx";
+
+"Min" = "Mín";
+
+"Reset" = "Resetar";
+
+"Alignment" = "Alinhamento";
+
+"Left alignment" = "Esquerda";
+
+"Center alignment" = "Centro";
+
+"Right alignment" = "Direita";
+
+"Dashboard" = "Painel Principal";
+
+"Enabled" = "Habilitado";
+
+"Disabled" = "Desabilitado";
+
+"Silent" = "Silencioso";
+
+"Units" = "Unidades";
+
+"Fans" = "Ventoinhas";
+
+"Scaling" = "Escala";
+
+"Linear" = "Linear";
+
+"Square" = "Quadrática";
+
+"Cube" = "Cúbica";
+
+"Logarithmic" = "Logarítmica";
+
+"Fixed scale" = "Escala fixa";
+
+"Cores" = "Núcleos";
+
+"Settings" = "Configurações";
+
+"Name" = "Nome";
+
+"Format" = "Formato";
+
+"Turn off" = "Deligar";
+
+"Normal" = "Normal";
+
+"Warning" = "Aviso";
+
+"Critical" = "Crítico";
+
+"Usage" = "Uso";
+
+"2 minutes" = "2 minutos";
+
+"3 minutes" = "3 minutos";
+
+"10 minutes" = "10 minutos";
+
+"Import" = "Importar";
+
+"Export" = "Exportar";
+
+"Separator" = "Separator";
+
+"Read" = "Read";
+
+"Write" = "Write";
+
+"Frequency" = "Frequency";
+
+"Save" = "Save";
+
+"Run" = "Run";
+
+"Stop" = "Stop";
+
+"Uninstall" = "Uninstall";
+
+"1 sec" = "1 sec";
+
+"2 sec" = "2 sec";
+
+"3 sec" = "3 sec";
+
+"5 sec" = "5 sec";
+
+"10 sec" = "10 sec";
+
+"15 sec" = "15 sec";
+
+"30 sec" = "30 sec";
+
+"60 sec" = "60 sec";
+
+
+// Setup
+"Stats Setup" = "Configurar Mornits";
+
+"Previous" = "Anterior";
+
+"Previous page" = "Página anterior";
+
+"Next" = "Próxima";
+
+"Next page" = "Próxima página";
+
+"Finish" = "Finalizar";
+
+"Finish setup" = "Finalizar configuração";
+
+"Welcome to Stats" = "Bem-vindo ao Mornits";
+
+"welcome_message" = "Obrigado por usar o Mornits, um monitor de sistema gratuito e de código aberto para macOS e Linux remoto para sua barra de menus.";
+
+"Start the application automatically when starting your Mac" = "Iniciar o aplicativo automaticamente ao iniciar seu Mac";
+
+"Do not start the application automatically when starting your Mac" = "Não iniciar o aplicativo automaticamente ao iniciar seu Mac";
+
+"Do everything silently in the background (recommended)" = "Faça tudo silenciosamente em segundo plano (recomendado)";
+
+"Check for a new version on startup" = "Verifique se há uma nova versão ao iniciar";
+
+"Check for a new version every day (once a day)" = "Verifique se há uma nova versão todos os dias (uma vez por dia)";
+
+"Check for a new version every week (once a week)" = "Verifique se há uma nova versão toda semana (uma vez por semana)";
+
+"Check for a new version every month (once a month)" = "Verifique se há uma nova versão todos os meses (uma vez por mês)";
+
+"Never check for updates (not recommended)" = "Nunca verifique se há atualizações (não recomendado)";
+
+"Anonymous telemetry for better development decisions" = "Telemetria anônima para melhores decisões de desenvolvimento";
+
+"Share anonymous telemetry data" = "Compartilhar dados de telemetria anônimos";
+
+"Do not share anonymous telemetry data" = "Não compartilhar dados de telemetria anônimos";
+
+"The configuration is completed" = "A configuração está concluída";
+
+"finish_setup_message" = "Tudo pronto! \n O Mornits é uma ferramenta de código aberto, é gratuita e sempre será. \n Se você gostou, você pode apoiar o projeto, sua ajuda sempre será bem vinda!";
+
+
+// Alerts
+"New version available" = "Nova versão disponível";
+
+"Click to install the new version of Stats" = "Clique para instalar a nova versão do Mornits";
+
+"Successfully updated" = "Atualizado com sucesso";
+
+"Stats was updated to v" = "Mornits foi atualizado para v%0";
+
+"Reset settings text" = "Todas as configurações do aplicativo serão redefinidas e o aplicativo será reiniciado. Tem certeza de que deseja fazer isso?";
+
+"Support text" = "Obrigado por usar o Mornits!\n\nA manutenção e o aprimoramento deste projeto de código aberto exigem tempo e recursos. Seu apoio nos ajuda a continuar fornecendo um aplicativo gratuito e confiável para todos.\n\nSe você acha o Mornits útil, considere fazer uma contribuição. Cada pedacinho ajuda!";
+
+
+// Settings
+"Open Activity Monitor" = "Abrir Monitor de Atividades";
+
+"Report a bug" = "Reportar um erro";
+
+"Support the application" = "Apoie o aplicativo";
+
+"Close application" = "Fechar aplicativo";
+
+"Open application settings" = "Abrir configurações do aplicativo";
+
+"Open dashboard" = "Abrir painel principal";
+
+"No notifications available in this module" = "Nenhuma notificação disponível neste módulo";
+
+"Open Calendar" = "Open Calendar";
+
+"Toggle the module" = "Toggle the module";
+
+
+// Application settings
+"Update application" = "Atualizar aplicativo";
+
+"Check for updates" = "Verificar se há atualizações";
+
+"At start" = "Ao iniciar";
+
+"Once per day" = "Uma vez por dia";
+
+"Once per week" = "Uma vez por semana";
+
+"Once per month" = "Uma vez por mês";
+
+"Never" = "Nunca";
+
+"Check for update" = "Verificar atualizações";
+
+"Show icon in dock" = "Mostrar ícone no dock";
+
+"Start at login" = "Iniciar no login";
+
+"Build number" = "Número da versão (Build)";
+
+"Import settings" = "Importar configurações";
+
+"Export settings" = "Exportar configurações";
+
+"Reset settings" = "Redefinir configurações";
+
+"Pause the Stats" = "Pausar o Mornits";
+
+"Resume the Stats" = "Retomar o Mornits";
+
+"Combined modules" = "Combinar módulos";
+
+"Combined details" = "Combinar detalhes";
+
+"Spacing" = "Espaçamento";
+
+"Share anonymous telemetry" = "Compartilhar telemetria anônima";
+
+"Choose file" = "Choose file";
+
+"Stress tests" = "Stress tests";
+
+
+// Dashboard
+"Serial number" = "Número de série";
+
+"Model identifier" = "Identificador do modelo";
+
+"Production year" = "Ano de produção";
+
+"Uptime" = "Tempo de atividade";
+
+"Number of cores" = "%0 núcleos";
+
+"Number of threads" = "%0 threads";
+
+"Number of e-cores" = "%0 núcleos de eficiência";
+
+"Number of p-cores" = "%0 núcleos de desempenho";
+
+"Disks" = "Disks";
+
+"Display" = "Display";
+
+
+// Update
+"The latest version of Stats installed" = "A versão mais recente do Mornits está instalada";
+
+"Downloading..." = "Baixando...";
+
+"Current version: " = "Versão atual: ";
+
+"Latest version: " = "Última versão: ";
+
+
+// Widgets
+"Color" = "Cor";
+
+"Label" = "Rótulo";
+
+"Box" = "Caixa";
+
+"Frame" = "Quadro";
+
+"Value" = "Valor";
+
+"Colorize" = "Colorir";
+
+"Colorize value" = "Valor colorido";
+
+"Additional information" = "Informação adicional";
+
+"Reverse values order" = "Ordem inversa dos valores";
+
+"Base" = "Base";
+
+"Display mode" = "Modo de exibição";
+
+"One row" = "Uma linha";
+
+"Two rows" = "Duas linhas";
+
+"Mini widget" = "Mini";
+
+"Line chart widget" = "Gráfico de linhas";
+
+"Bar chart widget" = "Gráfico de barras";
+
+"Pie chart widget" = "Gráfico de pizza";
+
+"Network chart widget" = "Gráfico de rede";
+
+"Speed widget" = "Velocidade";
+
+"Battery widget" = "Bateria";
+
+"Stack widget" = "Pilha";
+
+"Memory widget" = "Memoria";
+
+"Static width" = "Largura fixa";
+
+"Tachometer widget" = "Tacômetro";
+
+"State widget" = "Estado";
+
+"Text widget" = "Text widget";
+
+"Battery details widget" = "Battery details widget";
+
+"Show symbols" = "Mostrar símbolos";
+
+"Label widget" = "Rótulo";
+
+"Number of reads in the chart" = "Número de leituras no gráfico";
+
+"Color of download" = "Cor para download";
+
+"Color of upload" = "Cor para upload";
+
+"Monospaced font" = "Fonte Monoespaçada";
+
+"Reverse order" = "Ordem Reversa";
+
+"Chart history" = "Período do gráfico";
+
+"Default color" = "Default";
+
+"Transparent when no activity" = "Transparent when no activity";
+
+"Constant color" = "Constant";
+
+
+// Module Kit
+"Open module settings" = "Abrir configurações do módulo";
+
+"Select widget" = "Selecionar widget %0";
+
+"Open widget settings" = "Abrir configurações do widget";
+
+"Update interval" = "Intervalo de atualização";
+
+"Usage history" = "Histórico de uso";
+
+"Details" = "Detalhes";
+
+"Top processes" = "Principais processos";
+
+"Pictogram" = "Pictograma";
+
+"Module" = "Módulo";
+
+"Widgets" = "Widgets";
+
+"Popup" = "Popup";
+
+"Notifications" = "Notificações";
+
+"Merge widgets" = "Agrupar widgets";
+
+"No available widgets to configure" = "Nenhum widget disponível para configurar";
+
+"No options to configure for the popup in this module" = "Nenhuma opção para configurar o popup neste módulo";
+
+"Process" = "Processo";
+
+"Kill process" = "Encerrar processo";
+
+"Keyboard shortcut" = "Keyboard shortcut";
+
+"Listening..." = "Listening...";
+
+
+// Modules
+"Number of top processes" = "Número de processos principais";
+
+"Update interval for top processes" = "Intervalo de atualização para processos principais";
+
+"Notification level" = "Nível de notificação";
+
+"Chart color" = "Cor do gráfico";
+
+"Main chart scaling" = "Escala do gráfico principal";
+
+"Scale value" = "Valor da escala";
+
+"Text widget value" = "Text widget value";
+
+
+// CPU
+"CPU usage" = "Uso da CPU";
+
+"CPU temperature" = "Temperatura da CPU";
+
+"CPU frequency" = "Frequência da CPU";
+
+"System" = "Sistema";
+
+"User" = "Usuário";
+
+"Idle" = "Ocioso";
+
+"Show usage per core" = "Mostrar uso por núcleo";
+
+"Show hyper-threading cores" = "Mostrar núcleos hyper-threading";
+
+"Split the value (System/User)" = "Dividir o valor (Sistema/Usuário)";
+
+"Scheduler limit" = "Limite do agendador";
+
+"Speed limit" = "Limite de velocidade";
+
+"Average load" = "Carga média";
+
+"1 minute" = "1 minuto";
+
+"5 minutes" = "5 minutos";
+
+"15 minutes" = "15 minutos";
+
+"CPU usage threshold" = "Limite de uso da CPU";
+
+"CPU usage is" = "Uso da CPU é %0";
+
+"Efficiency cores" = "Efficiency cores";
+
+"Performance cores" = "Performance cores";
+
+"System color" = "Cor do sistema";
+
+"User color" = "Cor do usuário";
+
+"Idle color" = "Cor pausado";
+
+"Cluster grouping" = "Agrupamento";
+
+"Efficiency cores color" = "Cor para Núcleos de Eficiência";
+
+"Performance cores color" = "Cor para Núcleos de Desempenho";
+
+"Total load" = "Carga total";
+
+"System load" = "Carga do sistema";
+
+"User load" = "Carga do usuário";
+
+"Efficiency cores load" = "Carga dos núcleos de eficiência";
+
+"Performance cores load" = "Carga dos núcleos de desempenho";
+
+"All cores" = "All cores";
+
+
+// GPU
+"GPU to show" = "GPU para mostrar";
+
+"Show GPU type" = "Mostrar tipo de GPU";
+
+"GPU enabled" = "GPU ativada";
+
+"GPU disabled" = "GPU desativada";
+
+"GPU temperature" = "Temperatura da GPU";
+
+"GPU utilization" = "Utilização da GPU";
+
+"Vendor" = "Fabricante";
+
+"Model" = "Modelo";
+
+"Status" = "Status";
+
+"Active" = "Ativo";
+
+"Non active" = "Inativo";
+
+"Fan speed" = "Velocidade da ventoinha";
+
+"Core clock" = "Clock do núcleo";
+
+"Memory clock" = "Clock da memória";
+
+"Utilization" = "Utilização";
+
+"Render utilization" = "Utilização de renderização";
+
+"Tiler utilization" = "Utilização de tiler";
+
+"GPU usage threshold" = "Limite de uso da GPU";
+
+"GPU usage is" = "Uso da GPU é de %0";
+
+
+// RAM
+"Memory usage" = "Memória usada";
+
+"Memory pressure" = "Pressão de memória";
+
+"Total" = "Total";
+
+"Used" = "Usada";
+
+"App" = "App";
+
+"Wired" = "Residente";
+
+"Compressed" = "Comprimido";
+
+"Free" = "Livre";
+
+"Swap" = "Troca";
+
+"Split the value (App/Wired/Compressed)" = "Divida o valor (App/Residente/Comprimido)";
+
+"RAM utilization threshold" = "Limite de utilização de RAM";
+
+"RAM utilization is" = "Utilização de RAM de %0";
+
+"App color" = "Cor do app";
+
+"Wired color" = "Cor para residente";
+
+"Compressed color" = "Cor para comprimido";
+
+"Free color" = "Cor livre";
+
+"Free memory (less than)" = "Memória livre (menor que)";
+
+"Swap size" = "Troca usada";
+
+"Free RAM is" = "RAM livre é %0";
+
+
+// Disk
+"Show removable disks" = "Mostrar discos removíveis";
+
+"Used disk memory" = "Usado %0 de %1";
+
+"Free disk memory" = "Livre %0 de %1";
+
+"Disk to show" = "Disco para mostrar";
+
+"Open disk" = "Disco aberto";
+
+"Switch view" = "Mudar de vista";
+
+"Disk utilization threshold" = "Limite de utilização de disco";
+
+"Disk utilization is" = "Utilização de disco é de %0";
+
+"Read color" = "Cor para Leitura";
+
+"Write color" = "Cor para Escrita";
+
+"Disk usage" = "Uso do Disco";
+
+"Total read" = "Total lido";
+
+"Total written" = "Total escrito";
+
+"Write speed" = "Write";
+
+"Read speed" = "Read";
+
+"Drives" = "Drives";
+
+"SMART data" = "SMART data";
+
+
+// Sensors
+"Temperature unit" = "Unidade de temperatura";
+
+"Celsius" = "Celsius";
+
+"Fahrenheit" = "Fahrenheit";
+
+"Save the fan speed" = "Salvar a velocidade do ventoinha";
+
+"Fan" = "Ventoinha";
+
+"HID sensors" = "Sensores HID";
+
+"Synchronize fan's control" = "Sincronizar o controle do ventoinha";
+
+"Current" = "Atual";
+
+"Energy" = "Energia";
+
+"Show unknown sensors" = "Mostrar sensores desconhecidos";
+
+"Install fan helper" = "Instalar software auxiliar para ventoinha";
+
+"Uninstall fan helper" = "Desinstalar software auxiliar para ventoinha";
+
+"Fan value" = "Valor da ventoinha";
+
+"Turn off fan" = "Desligar ventoninha";
+
+"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Você irá desligar a ventoinha. Esta não é uma ação recomendada, pois pode danificar o seu mac, tem certeza que deseja fazer isto?";
+
+"Sensor threshold" = "Sensor threshold";
+
+"Left fan" = "Esquerda";
+
+"Right fan" = "Direita";
+
+"Fastest fan" = "Ventoinha mais rápida";
+
+"Sensor to show" = "Sensor to show";
+
+
+// Network
+"Uploading" = "Enviando";
+
+"Downloading" = "Baixando";
+
+"Public IP" = "IP Público";
+
+"Local IP" = "IP Local";
+
+"Interface" = "Interface";
+
+"Physical address" = "Endereço físico";
+
+"Refresh" = "Atualizar";
+
+"Click to copy public IP address" = "Clique para copiar o endereço de IP público";
+
+"Click to copy local IP address" = "Clique para copiar o endereço de IP local";
+
+"Click to copy wifi name" = "Clique para copiar o nome do wi-fi";
+
+"Click to copy mac address" = "Clique para copiar o endereço mac";
+
+"No connection" = "Sem conexão";
+
+"Network interface" = "Interface de rede";
+
+"Total download" = "Download total";
+
+"Total upload" = "Upload total";
+
+"Reader type" = "Tipo de leitor";
+
+"Interface based" = "Interface";
+
+"Processes based" = "Processo";
+
+"Reset data usage" = "Resetar uso de dados";
+
+"VPN mode" = "Modo VPN";
+
+"Standard" = "Padrão";
+
+"Security" = "Segurança";
+
+"Channel" = "Canal";
+
+"Common scale" = "Escala comum";
+
+"Autodetection" = "Autodetecção";
+
+"Widget activation threshold" = "Limite de ativação do widget";
+
+"Internet connection" = "Conexão com a internet";
+
+"Active state color" = "Cor do estado ativo";
+
+"Nonactive state color" = "Cor do estado inativo";
+
+"Connectivity host (ICMP)" = "Host de conectividade (ICMP)";
+
+"Leave empty to disable the check" = "Deixe em branco para desativar a verificação";
+
+"Connectivity history" = "Connectivity history";
+
+"Auto-refresh public IP address" = "Atualizar endereço IP público automaticamente";
+
+"Every hour" = "Cada 1 hora";
+
+"Every 12 hours" = "Cada 12 horas";
+
+"Every 24 hours" = "Cada 24 horas";
+
+"Network activity" = "Atividade de Rede";
+
+"Last reset" = "Último reset foi %0 atrás";
+
+"Latency" = "Latency";
+
+"Upload speed" = "Upload";
+
+"Download speed" = "Download";
+
+"Address" = "Address";
+
+"WiFi network" = "WiFi network";
+
+"Local IP changed" = "Local IP has changed";
+
+"Public IP changed" = "Public IP has changed";
+
+"Previous IP" = "Previous IP: %0";
+
+"New IP" = "New IP: %0";
+
+"Internet connection lost" = "Internet connection lost";
+
+"Internet connection established" = "Internet connection established";
+
+
+// Battery
+"Level" = "Nível";
+
+"Source" = "Fonte";
+
+"AC Power" = "Energia AC";
+
+"Battery Power" = "Energia da bateria";
+
+"Time" = "Tempo";
+
+"Health" = "Saúde";
+
+"Amperage" = "Corrente";
+
+"Voltage" = "Tensão";
+
+"Cycles" = "Número de ciclos";
+
+"Temperature" = "Temperatura";
+
+"Power adapter" = "Adaptador de energia";
+
+"Power" = "Energia";
+
+"Is charging" = "Está carregando";
+
+"Time to discharge" = "Tempo para descarregar";
+
+"Time to charge" = "Tempo para carregar";
+
+"Calculating" = "Calculando";
+
+"Fully charged" = "Completamente carregado";
+
+"Not connected" = "Não conectado";
+
+"Low level notification" = "Notificação de baixo nível";
+
+"High level notification" = "Notificação de alto nível";
+
+"Low battery" = "Bateria fraca";
+
+"High battery" = "Bateria cheia";
+
+"Battery remaining" = "%0% restante";
+
+"Battery remaining to full charge" = "%0% até carga completa";
+
+"Percentage" = "Porcentagem";
+
+"Percentage and time" = "Porcentagem e tempo";
+
+"Time and percentage" = "Tempo e porcentagem";
+
+"Time format" = "Formato de hora";
+
+"Hide additional information when full" = "Ocultar informações adicionais quando estiver cheia";
+
+"Last charge" = "Última carga";
+
+"Capacity" = "Capacidade";
+
+"current / maximum / designed" = "atual / máximo / projetado";
+
+"Low power mode" = "Modo de baixa energia";
+
+"Percentage inside the icon" = "Porcentagem dentro do ícone";
+
+"Colorize battery" = "Colorir bateria";
+
+"Charging current" = "Corrente de carregamento";
+
+"Charging Voltage" = "Tensão de carregamento";
+
+"Charger state inside the battery" = "Charger state inside the battery";
+
+
+// Bluetooth
+"Battery to show" = "Bateria para mostrar";
+
+"No Bluetooth devices are available" = "Nenhum dispositivo Bluetooth disponível";
+
+
+// Clock
+"Time zone" = "Fuso horário";
+
+"Local" = "Local";
+
+"Calendar" = "Calendar";
+
+"Local time" = "Local time";
+
+"Add new clock" = "Add new clock";
+
+"Delete selected clock" = "Delete selected clock";
+
+"Help with datetime format" = "Help with datetime format";
+
+
+// Colors
+"Based on utilization" = "Baseado na utilização";
+
+"Based on pressure" = "Baseado na pressão";
+
+"Based on cluster" = "Baseado no agrupamento";
+
+"System accent" = "Cor de ênfase do sistema";
+
+"Monochrome accent" = "Cor de ênfase monocromática";
+
+"Clear" = "Limpo";
+
+"White" = "Branco";
+
+"Black" = "Preto";
+
+"Gray" = "Cinza";
+
+"Second gray" = "Segundo cinza";
+
+"Dark gray" = "Cinza escuro";
+
+"Light gray" = "Cinza claro";
+
+"Red" = "Vermelho";
+
+"Second red" = "Segundo vermelho";
+
+"Green" = "Verde";
+
+"Second green" = "Segundo verde";
+
+"Blue" = "Azul";
+
+"Second blue" = "Segundo azul";
+
+"Yellow" = "Amarelo";
+
+"Second yellow" = "Segundo amarelo";
+
+"Orange" = "Laranja";
+
+"Second orange" = "Segundo laranja";
+
+"Purple" = "Roxo";
+
+"Second purple" = "Segundo roxo";
+
+"Brown" = "Marrom";
+
+"Second brown" = "Segundo marrom";
+
+"Cyan" = "Ciano";
+
+"Magenta" = "Magenta";
+
+"Pink" = "Rosa";
+
+"Teal" = "Azul-Verde";
+
+"Indigo" = "Índigo";
+
+"Combined processes" = "Combined processes";
+"Used color" = "Used color";
