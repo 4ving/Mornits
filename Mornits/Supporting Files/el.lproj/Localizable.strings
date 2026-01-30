@@ -42,7 +42,7 @@
 
 "Open Bluetooth settings" = "Άνοιγμα ρυθμίσεων Bluetooth";
 
-"Clock" = "Clock";
+"Clock" = "Ρολόι";
 
 "Open Clock settings" = "Open clock settings";
 
@@ -106,7 +106,7 @@
 
 "Dashboard" = "Ταμπλό";
 
-"Enabled" = "Enabled";
+"Enabled" = "Ενεργοποιημένο";
 
 "Disabled" = "Απενεργοποιημένο";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Ποσοστό μέσα στο εικονίδιο";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Χρωματισμός μπαταρίας";
 
-"Charging current" = "Charging current";
+"Charging current" = "Ρεύμα φόρτισης";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Τάση φόρτισης";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Βαθύ μπλε";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Συνδυασμένες διεργασίες";
+"Used color" = "Χρώμα χρησιμοποιημένων";
+
+// GPU/RAM/Net updates
+"Render" = "Απόδοση";
+"Tiler" = "Πλακίδια";
+"Local Pressure level" = "Τοπικό επίπεδο πίεσης";

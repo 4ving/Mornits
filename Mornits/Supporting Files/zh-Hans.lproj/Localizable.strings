@@ -314,13 +314,16 @@
 "Core clock" = "核心频率";
 "Memory clock" = "显存频率";
 "Utilization" = "利用率";
+"Render" = "渲染";
+"Tiler" = "分块";
 "Render utilization" = "渲染利用率";
-"Tiler utilization" = "Tiler利用率";
+"Tiler utilization" = "分块利用率";
 "GPU usage threshold" = "GPU占用阈值";
 "GPU usage is" = "GPU利用率是 %0";
 
 // RAM
 "Memory usage" = "内存占用";
+"Local Pressure level" = "本机压力等级";
 "Memory pressure" = "内存压力";
 "Total" = "共计";
 "Used" = "已用";
@@ -383,6 +386,7 @@
 
 // Network
 "Uploading" = "上传";
+"Upload" = "上传";
 "Downloading" = "下载";
 "Public IP" = "公网IP";
 "Local IP" = "本地IP";

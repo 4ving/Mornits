@@ -138,7 +138,7 @@
 
 "Turn off" = "Turn off";
 
-"Normal" = "Normal";
+"Normal" = "Normaalne";
 
 "Warning" = "Warning";
 
@@ -874,9 +874,9 @@
 
 "Colorize battery" = "Värvi aku";
 
-"Charging current" = "Charging current";
+"Charging current" = "Laadimisvool";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Laadimispinge";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -965,5 +965,10 @@
 "Teal" = "Sinakasroheline"; // ehk rohekassinine
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Ühendatud protsessid";
+"Used color" = "Kasutatud värv";
+
+// GPU/RAM/Net updates
+"Render" = "Renderdamine";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Kohalik surve tase";

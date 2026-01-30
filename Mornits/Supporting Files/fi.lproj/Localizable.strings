@@ -156,7 +156,7 @@
 
 "Export" = "Vie";
 
-"Separator" = "Separator";
+"Separator" = "Erotin";
 
 "Read" = "Read";
 
@@ -872,7 +872,7 @@
 
 "Percentage inside the icon" = "Prosentti kuvakkeen sisällä";
 
-"Colorize battery" = "Värjää akku";
+"Colorize battery" = "Väritä akku";
 
 "Charging current" = "Latausvirta";
 
@@ -966,5 +966,11 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Yhdistetyt prosessit";
+"Used color" = "Käytetty väri";
+
+// GPU/RAM/Net updates
+"Render" = "Renderöinti";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Paikallinen painetaso";
+"Upload" = "Lähetys";

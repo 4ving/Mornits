@@ -156,11 +156,11 @@
 
 "Export" = "تصدير";
 
-"Separator" = "Separator";
+"Separator" = "فاصل";
 
-"Read" = "Read";
+"Read" = "قراءة";
 
-"Write" = "Write";
+"Write" = "كتابة";
 
 "Frequency" = "Frequency";
 
@@ -874,9 +874,9 @@
 
 "Colorize battery" = "تلوين البطارية";
 
-"Charging current" = "Charging current";
+"Charging current" = "تيار الشحن";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "جهد الشحن";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "نيلي";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "العمليات المدمجة";
+"Used color" = "لون المستخدم";
+
+// GPU/RAM/Net updates
+"Render" = "تصيير";
+"Tiler" = "تجانب";
+"Local Pressure level" = "مستوى الضغط المحلي";

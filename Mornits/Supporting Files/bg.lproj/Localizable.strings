@@ -42,7 +42,7 @@
 
 "Open Bluetooth settings" = "Настройки на bluetooth";
 
-"Clock" = "Clock";
+"Clock" = "Часовник";
 
 "Open Clock settings" = "Open clock settings";
 
@@ -130,7 +130,7 @@
 
 "Cores" = "Ядра";
 
-"Settings" = "Settings";
+"Settings" = "Настройки";
 
 "Name" = "Name";
 
@@ -138,7 +138,7 @@
 
 "Turn off" = "Turn off";
 
-"Normal" = "Normal";
+"Normal" = "Нормален";
 
 "Warning" = "Warning";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Процент в иконата";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Оцветяване на батерията";
 
-"Charging current" = "Charging current";
+"Charging current" = "Ток на зареждане";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Напрежение на зареждане";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Индиго";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Комбинирани процеси";
+"Used color" = "Цвят на използваното";
+
+// GPU/RAM/Net updates
+"Render" = "Рендиране";
+"Tiler" = "Тайлер";
+"Local Pressure level" = "Ниво на налягане";

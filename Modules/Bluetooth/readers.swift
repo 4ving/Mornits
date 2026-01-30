@@ -112,27 +112,29 @@ internal class DevicesReader: Reader<[BLEDevice]>, CBCentralManagerDelegate, CBP
                 ))
         }
 
-        let peripherals = self.manager.retrievePeripherals(
-            withIdentifiers: self.devices.compactMap({ $0.uuid }))
-        peripherals.forEach { (p: CBPeripheral) in
-            guard let idx = self.devices.firstIndex(where: { $0.uuid == p.identifier }) else {
-                return
-            }
-
-            if self.devices[idx].peripheral == nil {
-                self.devices[idx].peripheral = p
-            }
-
-            if p.state == .disconnected {
-                if self.manager.isScanning {
-                    self.manager.connect(p, options: nil)
+        if self.manager.state == .poweredOn {
+            let peripherals = self.manager.retrievePeripherals(
+                withIdentifiers: self.devices.compactMap({ $0.uuid }))
+            peripherals.forEach { (p: CBPeripheral) in
+                guard let idx = self.devices.firstIndex(where: { $0.uuid == p.identifier }) else {
+                    return
                 }
-            } else if p.state == .disconnecting {
-                self.devicesToRemove.append(p.identifier)
-            } else if p.state == .connected && !self.devices[idx].isPeripheralInitialized {
-                p.delegate = self
-                p.discoverServices([DevicesReader.batteryServiceUUID])
-                self.devices[idx].isPeripheralInitialized = true
+
+                if self.devices[idx].peripheral == nil {
+                    self.devices[idx].peripheral = p
+                }
+
+                if p.state == .disconnected {
+                    if self.manager.isScanning {
+                        self.manager.connect(p, options: nil)
+                    }
+                } else if p.state == .disconnecting {
+                    self.devicesToRemove.append(p.identifier)
+                } else if p.state == .connected && !self.devices[idx].isPeripheralInitialized {
+                    p.delegate = self
+                    p.discoverServices([DevicesReader.batteryServiceUUID])
+                    self.devices[idx].isPeripheralInitialized = true
+                }
             }
         }
 

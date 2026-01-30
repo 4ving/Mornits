@@ -42,8 +42,7 @@ public struct Provider: TimelineProvider {
     public typealias Entry = United_entry
 
     private let userDefaults: UserDefaults? = UserDefaults(
-        suiteName:
-            "\(Bundle.main.object(forInfoDictionaryKey: "TeamId") as! String).com.4ving.Mornits.widgets"
+        suiteName: "group.com.4ving.Mornits.shared"
     )
 
     public func placeholder(in context: Context) -> United_entry {
@@ -57,43 +56,67 @@ public struct Provider: TimelineProvider {
     public func getTimeline(
         in context: Context, completion: @escaping (Timeline<United_entry>) -> Void
     ) {
-        self.userDefaults?.set(Date().timeIntervalSince1970, forKey: United_entry.kind)
-
         var entry = United_entry()
-        if let raw = userDefaults?.data(forKey: "CPU@LoadReader"),
-            let value = try? JSONDecoder().decode(CPU_Load.self, from: raw)
+        var loaded = false
+        
+        // Manual File Read
+        if let containerURL = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: "N7LBX474DC.group.com.4ving.Mornits.shared")
         {
-            entry.cpu = Value(value: value.totalUsage)
+            let plistURL = containerURL.appendingPathComponent("Library/Preferences/group.com.4ving.Mornits.shared.plist")
+            if let data = try? Data(contentsOf: plistURL),
+               let dict = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] {
+               
+                if let raw = dict["CPU@LoadReader"] as? Data,
+                   let value = try? JSONDecoder().decode(CPU_Load.self, from: raw) {
+                    entry.cpu = Value(value: value.totalUsage)
+                }
+                
+                if let raw = dict["GPU@InfoReader"] as? Data,
+                   let value = try? JSONDecoder().decode(GPU_Info.self, from: raw) {
+                    entry.gpu = Value(value: value.utilization ?? 0)
+                }
+                
+                if let raw = dict["RAM@UsageReader"] as? Data,
+                   let value = try? JSONDecoder().decode(RAM_Usage.self, from: raw) {
+                    entry.ram = Value(value: value.usage)
+                }
+                
+                if let raw = dict["Disk@CapacityReader"] as? Data,
+                   let value = try? JSONDecoder().decode(drive.self, from: raw) {
+                    entry.disk = Value(value: value.percentage)
+                }
+                
+                loaded = true
+            }
         }
-        if let raw = userDefaults?.bool(forKey: "CPU_state"), !raw {
-            entry.cpu = nil
-        }
+        
+        // Fallback or "State" checks (skipping state checks for now to force data)
+        // If we want to support hiding widgets via state, we need to read "CPU_state" etc from the plist too.
+        // For now, let's assume if data exists, show it.
 
-        if let raw = userDefaults?.data(forKey: "GPU@InfoReader"),
-            let value = try? JSONDecoder().decode(GPU_Info.self, from: raw)
-        {
-            entry.gpu = Value(value: value.utilization ?? 0)
-        }
-        if let raw = userDefaults?.bool(forKey: "GPU_state"), !raw {
-            entry.gpu = nil
-        }
-
-        if let raw = userDefaults?.data(forKey: "RAM@UsageReader"),
-            let value = try? JSONDecoder().decode(RAM_Usage.self, from: raw)
-        {
-            entry.ram = Value(value: value.usage)
-        }
-        if let raw = userDefaults?.bool(forKey: "RAM_state"), !raw {
-            entry.ram = nil
-        }
-
-        if let raw = userDefaults?.data(forKey: "Disk@CapacityReader"),
-            let value = try? JSONDecoder().decode(drive.self, from: raw)
-        {
-            entry.disk = Value(value: value.percentage)
-        }
-        if let raw = userDefaults?.bool(forKey: "Disk_state"), !raw {
-            entry.disk = nil
+        if !loaded {
+            // Fallback to UserDefaults
+             if let raw = userDefaults?.data(forKey: "CPU@LoadReader"),
+                let value = try? JSONDecoder().decode(CPU_Load.self, from: raw)
+            {
+                entry.cpu = Value(value: value.totalUsage)
+            }
+             if let raw = userDefaults?.data(forKey: "GPU@InfoReader"),
+                let value = try? JSONDecoder().decode(GPU_Info.self, from: raw)
+            {
+                 entry.gpu = Value(value: value.utilization ?? 0)
+            }
+            if let raw = userDefaults?.data(forKey: "RAM@UsageReader"),
+                let value = try? JSONDecoder().decode(RAM_Usage.self, from: raw)
+            {
+                entry.ram = Value(value: value.usage)
+            }
+            if let raw = userDefaults?.data(forKey: "Disk@CapacityReader"),
+                let value = try? JSONDecoder().decode(drive.self, from: raw)
+            {
+                entry.disk = Value(value: value.percentage)
+            }
         }
 
         let entries: [United_entry] = [entry]

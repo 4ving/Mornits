@@ -968,3 +968,8 @@
 
 "Combined processes" = "Combined processes";
 "Used color" = "Used color";
+
+// GPU/RAM/Net updates
+"Render" = "Render";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Local Pressure level";

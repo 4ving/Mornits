@@ -22,15 +22,15 @@
 
 "Open RAM settings" = "Open RAM settings";
 
-"Disk" = "Disk";
+"Disk" = "Disc";
 
 "Open Disk settings" = "Open disk settings";
 
-"Sensors" = "Sensors";
+"Sensors" = "Senzori";
 
 "Open Sensors settings" = "Open sensors settings";
 
-"Network" = "Network";
+"Network" = "Rețea";
 
 "Open Network settings" = "Open network settings";
 
@@ -42,7 +42,7 @@
 
 "Open Bluetooth settings" = "Open bluetooth settings";
 
-"Clock" = "Clock";
+"Clock" = "Ceas";
 
 "Open Clock settings" = "Open clock settings";
 
@@ -104,11 +104,11 @@
 
 "Right alignment" = "Right";
 
-"Dashboard" = "Dashboard";
+"Dashboard" = "Tablou de bord";
 
-"Enabled" = "Enabled";
+"Enabled" = "Activat";
 
-"Disabled" = "Disabled";
+"Disabled" = "Dezactivat";
 
 "Silent" = "Silent";
 
@@ -118,7 +118,7 @@
 
 "Scaling" = "Scaling";
 
-"Linear" = "Linear";
+"Linear" = "Liniar";
 
 "Square" = "Square";
 
@@ -130,9 +130,9 @@
 
 "Cores" = "Cores";
 
-"Settings" = "Settings";
+"Settings" = "Setări";
 
-"Name" = "Name";
+"Name" = "Nume";
 
 "Format" = "Format";
 
@@ -140,9 +140,9 @@
 
 "Normal" = "Normal";
 
-"Warning" = "Warning";
+"Warning" = "Avertisment";
 
-"Critical" = "Critical";
+"Critical" = "Critic";
 
 "Usage" = "Usage";
 
@@ -158,9 +158,9 @@
 
 "Separator" = "Separator";
 
-"Read" = "Read";
+"Read" = "Citire";
 
-"Write" = "Write";
+"Write" = "Scriere";
 
 "Frequency" = "Frequency";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Percentage inside the icon";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Colorează bateria";
 
-"Charging current" = "Charging current";
+"Charging current" = "Curent de încărcare";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Tensiune de încărcare";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Procese combinate";
+"Used color" = "Culoare utilizată";
+
+// GPU/RAM/Net updates
+"Render" = "Redare";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Nivel presiune locală";

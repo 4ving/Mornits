@@ -306,6 +306,8 @@
 "Core clock" = "核心時脈";
 "Memory clock" = "記憶體時脈";
 "Utilization" = "利用率";
+"Render" = "渲染";
+"Tiler" = "分塊";
 "Render utilization" = "渲染利用率";
 "Tiler utilization" = "圖塊利用率";
 "GPU usage threshold" = "GPU使用量臨界值";
@@ -313,6 +315,7 @@
 
 // RAM
 "Memory usage" = "記憶體使用量";
+"Local Pressure level" = "本機壓力等級";
 "Memory pressure" = "記憶體壓力";
 "Total" = "總共";
 "Used" = "已使用";
@@ -375,6 +378,7 @@
 
 // Network
 "Uploading" = "上傳";
+"Upload" = "上傳";
 "Downloading" = "下載";
 "Public IP" = "公用 IP";
 "Local IP" = "區域 IP";

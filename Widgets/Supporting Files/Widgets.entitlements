@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>$(TeamIdentifierPrefix)com.4ving.Mornits.widgets</string>
+		<string>N7LBX474DC.group.com.4ving.Mornits.shared</string>
 	</array>
 </dict>
 </plist>

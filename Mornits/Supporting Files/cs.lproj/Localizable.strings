@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Procento uvnitř ikony";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Obarvit baterii";
 
-"Charging current" = "Charging current";
+"Charging current" = "Nabíjecí proud";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Nabíjecí napětí";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinované procesy";
+"Used color" = "Barva použitého";
+
+// GPU/RAM/Net updates
+"Render" = "Vykreslování";
+"Tiler" = "Dlaždice";
+"Local Pressure level" = "Úroveň místního tlaku";

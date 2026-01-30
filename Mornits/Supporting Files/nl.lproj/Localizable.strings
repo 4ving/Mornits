@@ -22,15 +22,15 @@
 
 "Open RAM settings" = "Open RAM instellingen";
 
-"Disk" = "Disk";
+"Disk" = "Schijf";
 
 "Open Disk settings" = "Open disk instellingen";
 
-"Sensors" = "Sensors";
+"Sensors" = "Sensoren";
 
 "Open Sensors settings" = "Open sensors instellingen";
 
-"Network" = "Network";
+"Network" = "Netwerk";
 
 "Open Network settings" = "Open network instellingen";
 
@@ -42,7 +42,7 @@
 
 "Open Bluetooth settings" = "Open bluetooth instellingen";
 
-"Clock" = "Clock";
+"Clock" = "Klok";
 
 "Open Clock settings" = "Open clock settings";
 
@@ -106,7 +106,7 @@
 
 "Dashboard" = "Dashboard";
 
-"Enabled" = "Enabled";
+"Enabled" = "Ingeschakeld";
 
 "Disabled" = "Uitgeschakeld";
 
@@ -118,7 +118,7 @@
 
 "Scaling" = "Scaling";
 
-"Linear" = "Linear";
+"Linear" = "Lineair";
 
 "Square" = "Square";
 
@@ -130,19 +130,19 @@
 
 "Cores" = "Cores";
 
-"Settings" = "Settings";
+"Settings" = "Instellingen";
 
-"Name" = "Name";
+"Name" = "Naam";
 
-"Format" = "Format";
+"Format" = "Formaat";
 
 "Turn off" = "Turn off";
 
-"Normal" = "Normal";
+"Normal" = "Normaal";
 
-"Warning" = "Warning";
+"Warning" = "Waarschuwing";
 
-"Critical" = "Critical";
+"Critical" = "Kritiek";
 
 "Usage" = "Usage";
 
@@ -156,11 +156,11 @@
 
 "Export" = "Export";
 
-"Separator" = "Separator";
+"Separator" = "Scheidingsteken";
 
-"Read" = "Read";
+"Read" = "Lezen";
 
-"Write" = "Write";
+"Write" = "Schrijven";
 
 "Frequency" = "Frequency";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Percentage inside the icon";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Batterij inkleuren";
 
-"Charging current" = "Charging current";
+"Charging current" = "Laadstroom";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Laadspanning";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Gecombineerde processen";
+"Used color" = "Gebruikte kleur";
+
+// GPU/RAM/Net updates
+"Render" = "Renderen";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Lokaal drukniveau";

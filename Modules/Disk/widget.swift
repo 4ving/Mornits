@@ -30,8 +30,7 @@ public struct Provider: TimelineProvider {
     public typealias Entry = Disk_entry
 
     private let userDefaults: UserDefaults? = UserDefaults(
-        suiteName:
-            "\(Bundle.main.object(forInfoDictionaryKey: "TeamId") as! String).com.4ving.Mornits.widgets"
+        suiteName: "group.com.4ving.Mornits.shared"
     )
 
     public func placeholder(in context: Context) -> Disk_entry {
@@ -45,13 +44,33 @@ public struct Provider: TimelineProvider {
     public func getTimeline(
         in context: Context, completion: @escaping (Timeline<Disk_entry>) -> Void
     ) {
-        self.userDefaults?.set(Date().timeIntervalSince1970, forKey: Disk_entry.kind)
         var entry = Disk_entry()
-        if let raw = userDefaults?.data(forKey: "Disk@CapacityReader"),
-            let load = try? JSONDecoder().decode(drive.self, from: raw)
+        var loaded = false
+        
+        if let containerURL = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: "N7LBX474DC.group.com.4ving.Mornits.shared")
         {
-            entry.value = load
+            let plistURL = containerURL.appendingPathComponent("Library/Preferences/group.com.4ving.Mornits.shared.plist")
+            if let data = try? Data(contentsOf: plistURL) {
+                if let dict = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] {
+                    if let rawData = dict["Disk@CapacityReader"] as? Data {
+                         if let load = try? JSONDecoder().decode(drive.self, from: rawData) {
+                            entry.value = load
+                            loaded = true
+                         }
+                    }
+                }
+            }
         }
+
+        if !loaded {
+            if let raw = userDefaults?.data(forKey: "Disk@CapacityReader"),
+                let load = try? JSONDecoder().decode(drive.self, from: raw)
+            {
+                entry.value = load
+            }
+        }
+
         let entries: [Disk_entry] = [entry]
         completion(Timeline(entries: entries, policy: .atEnd))
     }

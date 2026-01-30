@@ -294,11 +294,15 @@ public class Network: Module {
 
     private func aggregatedUsage() -> Network_Usage {
         var bandwidth = Bandwidth()
+        var total = Bandwidth()
 
         if RemoteServersManager.shared.localEnabled {
             if let local = self.lastLocalUsage?.first {
                 bandwidth.upload += local.bandwidth.upload
                 bandwidth.download += local.bandwidth.download
+                
+                total.upload += local.total.upload
+                total.download += local.total.download
             }
         }
 
@@ -307,11 +311,18 @@ public class Network: Module {
             if let data = RemoteServersManager.shared.data[server.id] {
                 bandwidth.upload += data.upload
                 bandwidth.download += data.download
+                
+                // Sum up totals from all interfaces
+                for interface in data.interfaces {
+                    total.upload += interface.totalUpload
+                    total.download += interface.totalDownload
+                }
             }
         }
 
         var value = Network_Usage()
         value.bandwidth = bandwidth
+        value.total = total
         return value
     }
 
@@ -498,11 +509,10 @@ public class Network: Module {
         }
 
         if self.systemWidgetsUpdatesState {
+            let aggregated = self.aggregatedUsage()
             if #available(macOS 11.0, *) {
-                if isWidgetActive(self.userDefaults, [Network_entry.kind]),
-                    let blobData = try? JSONEncoder().encode(value)
-                {
-                    self.userDefaults?.set(blobData, forKey: "Network@UsageReader")
+                if let blobData = try? JSONEncoder().encode(aggregated) {
+                    self.exportWidgetData(blobData, forKey: "Network@UsageReader")
                 }
                 WidgetCenter.shared.reloadTimelines(ofKind: Network_entry.kind)
             }

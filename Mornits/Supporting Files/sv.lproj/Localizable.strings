@@ -966,5 +966,11 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinerade processer";
+"Used color" = "Använd färg";
+
+// GPU/RAM/Net updates
+"Render" = "Rendering";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Lokal trycknivå";
+"Upload" = "Uppladdning";

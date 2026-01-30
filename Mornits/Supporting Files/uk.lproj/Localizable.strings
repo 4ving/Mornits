@@ -872,7 +872,7 @@
 
 "Percentage inside the icon" = "Відсоток всередині віджету";
 
-"Colorize battery" = "Розфарбувати акумулятор";
+"Colorize battery" = "Розфарбувати батарею";
 
 "Charging current" = "Струм зарядки";
 
@@ -966,5 +966,11 @@
 
 "Indigo" = "Індіго";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Об'єднані процеси";
+"Used color" = "Колір використаного";
+
+// GPU/RAM/Net updates
+"Render" = "Рендеринг";
+"Tiler" = "Тайлер";
+"Local Pressure level" = "Рівень локального тиску";
+"Upload" = "Вивантаження";

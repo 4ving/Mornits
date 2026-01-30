@@ -966,5 +966,11 @@
 
 "Indigo" = "Индиго";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Объединенные процессы";
+"Used color" = "Цвет использованного";
+
+// GPU/RAM/Net updates
+"Render" = "Рендеринг";
+"Tiler" = "Тайлер";
+"Local Pressure level" = "Уровень локальной нагрузки";
+"Upload" = "Загрузка";

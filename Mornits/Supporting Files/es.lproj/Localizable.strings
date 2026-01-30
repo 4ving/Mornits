@@ -118,7 +118,7 @@
 
 "Scaling" = "Escala";
 
-"Linear" = "Linear";
+"Linear" = "Lineal";
 
 "Square" = "Cuadrática";
 
@@ -966,5 +966,11 @@
 
 "Indigo" = "Índigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Procesos combinados";
+"Used color" = "Color de usado";
+
+// GPU/RAM/Net updates
+"Render" = "Renderizado";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Nivel de presión local";
+"Upload" = "Subida";

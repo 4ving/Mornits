@@ -313,6 +313,8 @@
 "Core clock" = "Core clock";
 "Memory clock" = "Memory clock";
 "Utilization" = "Utilization";
+"Render" = "Render";
+"Tiler" = "Tiler";
 "Render utilization" = "Render utilization";
 "Tiler utilization" = "Tiler utilization";
 "GPU usage threshold" = "GPU usage threshold";
@@ -320,6 +322,7 @@
 
 // RAM
 "Memory usage" = "Memory usage";
+"Local Pressure level" = "Local Pressure level";
 "Memory pressure" = "Memory pressure";
 "Total" = "Total";
 "Used" = "Used";
@@ -382,6 +385,7 @@
 
 // Network
 "Uploading" = "Upload";
+"Upload" = "Upload";
 "Downloading" = "Download";
 "Public IP" = "Public IP";
 "Local IP" = "Local IP";

@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
 	<string>746</string>
 	<key>NSExtension</key>
@@ -22,6 +22,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2024 Serhiy Mytrovtsiy. All rights reserved.</string>
 	<key>TeamId</key>
-	<string>RP2S87B72W</string>
+	<string>N7LBX474DC</string>
 </dict>
 </plist>

@@ -42,7 +42,7 @@
 
 "Open Bluetooth settings" = "פתח/י הגדרות בלוטות׳";
 
-"Clock" = "Clock";
+"Clock" = "שעון";
 
 "Open Clock settings" = "Open clock settings";
 
@@ -106,7 +106,7 @@
 
 "Dashboard" = "דאשבורד";
 
-"Enabled" = "Enabled";
+"Enabled" = "מופעל";
 
 "Disabled" = "חסימה";
 
@@ -118,7 +118,7 @@
 
 "Scaling" = "Scaling";
 
-"Linear" = "Linear";
+"Linear" = "ליניארי";
 
 "Square" = "Square";
 
@@ -130,19 +130,19 @@
 
 "Cores" = "Cores";
 
-"Settings" = "Settings";
+"Settings" = "הגדרות";
 
-"Name" = "Name";
+"Name" = "שם";
 
-"Format" = "Format";
+"Format" = "פורמט";
 
 "Turn off" = "Turn off";
 
-"Normal" = "Normal";
+"Normal" = "רגיל";
 
-"Warning" = "Warning";
+"Warning" = "אזהרה";
 
-"Critical" = "Critical";
+"Critical" = "קריטי";
 
 "Usage" = "Usage";
 
@@ -156,11 +156,11 @@
 
 "Export" = "Export";
 
-"Separator" = "Separator";
+"Separator" = "מפריד";
 
-"Read" = "Read";
+"Read" = "קריאה";
 
-"Write" = "Write";
+"Write" = "כתיבה";
 
 "Frequency" = "Frequency";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Percentage inside the icon";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "צבע סוללה";
 
-"Charging current" = "Charging current";
+"Charging current" = "זרם טעינה";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "מתח טעינה";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "אינדיגו";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "תהליכים משולבים";
+"Used color" = "צבע בשימוש";
+
+// GPU/RAM/Net updates
+"Render" = "Render";
+"Tiler" = "Tiler";
+"Local Pressure level" = "רמת לחץ מקומית";

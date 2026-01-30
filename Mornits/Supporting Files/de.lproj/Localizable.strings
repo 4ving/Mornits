@@ -872,7 +872,7 @@
 
 "Percentage inside the icon" = "Prozentsatz im Symbol";
 
-"Colorize battery" = "Akku einfärben";
+"Colorize battery" = "Batterie einfärben";
 
 "Charging current" = "Ladestrom";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinierte Prozesse";
+"Used color" = "Verwendete Farbe";
+
+// GPU/RAM/Net updates
+"Render" = "Rendern";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Lokaler Druckpegel";

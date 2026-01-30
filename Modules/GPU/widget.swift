@@ -32,8 +32,7 @@ public struct Provider: TimelineProvider {
     public typealias Entry = GPU_entry
 
     private let userDefaults: UserDefaults? = UserDefaults(
-        suiteName:
-            "\(Bundle.main.object(forInfoDictionaryKey: "TeamId") as! String).com.4ving.Mornits.widgets"
+        suiteName: "group.com.4ving.Mornits.shared"
     )
 
     public func placeholder(in context: Context) -> GPU_entry {
@@ -47,13 +46,33 @@ public struct Provider: TimelineProvider {
     public func getTimeline(
         in context: Context, completion: @escaping (Timeline<GPU_entry>) -> Void
     ) {
-        self.userDefaults?.set(Date().timeIntervalSince1970, forKey: GPU_entry.kind)
         var entry = GPU_entry()
-        if let raw = userDefaults?.data(forKey: "GPU@InfoReader"),
-            let load = try? JSONDecoder().decode(GPU_Info.self, from: raw)
+        var loaded = false
+        
+        if let containerURL = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: "N7LBX474DC.group.com.4ving.Mornits.shared")
         {
-            entry.value = load
+            let plistURL = containerURL.appendingPathComponent("Library/Preferences/group.com.4ving.Mornits.shared.plist")
+            if let data = try? Data(contentsOf: plistURL) {
+                if let dict = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] {
+                    if let rawData = dict["GPU@InfoReader"] as? Data {
+                         if let load = try? JSONDecoder().decode(GPU_Info.self, from: rawData) {
+                            entry.value = load
+                            loaded = true
+                         }
+                    }
+                }
+            }
         }
+
+        if !loaded {
+            if let raw = userDefaults?.data(forKey: "GPU@InfoReader"),
+                let load = try? JSONDecoder().decode(GPU_Info.self, from: raw)
+            {
+                entry.value = load
+            }
+        }
+
         let entries: [GPU_entry] = [entry]
         completion(Timeline(entries: entries, policy: .atEnd))
     }

@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Percentagem dentro do ícone";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Colorir bateria";
 
-"Charging current" = "Charging current";
+"Charging current" = "Corrente de carregamento";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Tensão de carregamento";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Processos combinados";
+"Used color" = "Cor de usado";
+
+// GPU/RAM/Net updates
+"Render" = "Renderização";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Nível de pressão local";

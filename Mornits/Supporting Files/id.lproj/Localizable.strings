@@ -42,7 +42,7 @@
 
 "Open Bluetooth settings" = "Buka pengaturan bluetooth";
 
-"Clock" = "Clock";
+"Clock" = "Jam";
 
 "Open Clock settings" = "Open clock settings";
 
@@ -106,7 +106,7 @@
 
 "Dashboard" = "Dasbor";
 
-"Enabled" = "Enabled";
+"Enabled" = "Diaktifkan";
 
 "Disabled" = "Dinonaktifkan";
 
@@ -130,9 +130,9 @@
 
 "Cores" = "Cores";
 
-"Settings" = "Settings";
+"Settings" = "Pengaturan";
 
-"Name" = "Name";
+"Name" = "Nama";
 
 "Format" = "Format";
 
@@ -140,9 +140,9 @@
 
 "Normal" = "Normal";
 
-"Warning" = "Warning";
+"Warning" = "Peringatan";
 
-"Critical" = "Critical";
+"Critical" = "Kritis";
 
 "Usage" = "Usage";
 
@@ -156,11 +156,11 @@
 
 "Export" = "Export";
 
-"Separator" = "Separator";
+"Separator" = "Pemisah";
 
-"Read" = "Read";
+"Read" = "Baca";
 
-"Write" = "Write";
+"Write" = "Tulis";
 
 "Frequency" = "Frequency";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Percentage inside the icon";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "Warnai baterai";
 
-"Charging current" = "Charging current";
+"Charging current" = "Arus pengisian";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Tegangan pengisian";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Proses gabungan";
+"Used color" = "Warna terpakai";
+
+// GPU/RAM/Net updates
+"Render" = "Render";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Tingkat tekanan lokal";

@@ -966,5 +966,10 @@
 
 "Indigo" = "Índigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Processos combinados";
+"Used color" = "Cor de usado";
+
+// GPU/RAM/Net updates
+"Render" = "Renderização";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Nível de pressão local";

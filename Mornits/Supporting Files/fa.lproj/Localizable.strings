@@ -132,7 +132,7 @@
 
 "Settings" = "Settings";
 
-"Name" = "Name";
+"Name" = "نام";
 
 "Format" = "Format";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "درصد داخل آیکون";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "رنگی کردن باتری";
 
-"Charging current" = "Charging current";
+"Charging current" = "جریان شارژ";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "ولتاژ شارژ";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "نیلی";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "فرآیندهای ترکیبی";
+"Used color" = "رنگ استفاده شده";
+
+// GPU/RAM/Net updates
+"Render" = "رندر";
+"Tiler" = "کاشیکari";
+"Local Pressure level" = "سطح فشار محلی";

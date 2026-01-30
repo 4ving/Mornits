@@ -870,11 +870,11 @@
 
 "Percentage inside the icon" = "Procenttegn i ikonet";
 
-"Colorize battery" = "Farvelæg batteri";
+"Colorize battery" = "Farv batteri";
 
-"Charging current" = "Charging current";
+"Charging current" = "Ladestrøm";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Ladespænding";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -964,5 +964,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinerede processer";
+"Used color" = "Farve for brugt";
+
+// GPU/RAM/Net updates
+"Render" = "Gengivelse";
+"Tiler" = "Fliser";
+"Local Pressure level" = "Lokalt trykniveau";

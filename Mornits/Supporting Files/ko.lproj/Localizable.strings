@@ -140,7 +140,7 @@
 
 "Normal" = "Normal";
 
-"Warning" = "Warning";
+"Warning" = "경고";
 
 "Critical" = "Critical";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "아이콘 속에 백분율";
 
-"Colorize battery" = "배터리 색상 표시";
+"Colorize battery" = "배터리 색상 입히기";
 
-"Charging current" = "Charging current";
+"Charging current" = "충전 전류";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "충전 전압";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "남색";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "결합된 프로세스";
+"Used color" = "사용된 색상";
+
+// GPU/RAM/Net updates
+"Render" = "렌더링";
+"Tiler" = "타일러";
+"Local Pressure level" = "로컬 압력 수준";

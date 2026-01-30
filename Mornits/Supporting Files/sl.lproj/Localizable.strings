@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Odstotek znotraj ikone";
 
-"Colorize battery" = "Obarvanje baterije";
+"Colorize battery" = "Obarvaj baterijo";
 
-"Charging current" = "Tok polnjenja";
+"Charging current" = "Polnilni tok";
 
-"Charging Voltage" = "Napetost polnjenja";
+"Charging Voltage" = "Polnilna napetost";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,11 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinirani procesi";
+"Used color" = "Uporabljena barva";
+
+// GPU/RAM/Net updates
+"Render" = "Upodabljanje";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Lokalna raven pritiska";
+"Upload" = "Nalaganje";

@@ -966,5 +966,11 @@
 
 "Indigo" = "Chàm";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Quy trình kết hợp";
+"Used color" = "Màu đã sử dụng";
+
+// GPU/RAM/Net updates
+"Render" = "Kết xuất";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Mức áp lực cục bộ";
+"Upload" = "Tải lên";

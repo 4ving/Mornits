@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Százalék megjelenítése az ikonban";
 
-"Colorize battery" = "Akkumlátor színezése";
+"Colorize battery" = "Akkumulátor színezése";
 
-"Charging current" = "Charging current";
+"Charging current" = "Töltőáram";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Töltőfeszültség";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigó";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinált folyamatok";
+"Used color" = "Használt szín";
+
+// GPU/RAM/Net updates
+"Render" = "Renderelés";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Helyi nyomásszint";

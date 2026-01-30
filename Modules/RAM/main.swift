@@ -271,40 +271,36 @@ public class RAM: Module {
     private func updateWidgets() {
         guard let value = self.lastLocalUsage else { return }
 
-        // Aggregation logic for widgets
-        var totalPercent: Double = 0
-        var count: Double = 0
+        // Aggregation logic for widgets (Absolute Values)
+        var sumUsed: Double = 0
+        var sumTotal: Double = 0
 
         if RemoteServersManager.shared.localEnabled {
-            totalPercent += value.usage
-            count += 1
+            sumUsed += value.used
+            sumTotal += value.total
         }
 
         let servers = RemoteServersManager.shared.servers.filter({ $0.enabled })
         for server in servers {
-            if let data = RemoteServersManager.shared.data[server.id], let ram = data.ram {
-                totalPercent += ram
-                count += 1
+            if let data = RemoteServersManager.shared.data[server.id] {
+                // Ensure we use the absolute bytes if available
+                if data.ramTotal > 0 {
+                    sumUsed += Double(data.ramUsed)
+                    sumTotal += Double(data.ramTotal)
+                }
             }
         }
 
         var categoryValue = value
-        if count > 0 {
-            let avg = totalPercent / count
-            categoryValue.used = value.total * avg
-            categoryValue.free = value.total - categoryValue.used
-
-            // Re-calculate app/wired/compressed proportions based on new used?
-            // Or just scale them?
-            // The widget usually only uses .usage percentage or total Used string.
-            // If the widget uses 'value.app', it might look weird if we don't scale it.
-            // But strict "usage" percentage is what matters most for bar charts/gauges.
-            // Let's just update 'used' and 'free' which drives 'usage' property.
-        } else if !RemoteServersManager.shared.localEnabled {
-            // No local, no remote -> 0 usage? or keep as is?
-            // If local is disabled and no servers, usage should probably be 0 or empty.
-            categoryValue.used = 0
-            categoryValue.free = value.total
+        if sumTotal > 0 {
+            categoryValue.total = sumTotal
+            categoryValue.used = sumUsed
+            categoryValue.free = sumTotal - sumUsed
+        } else {
+             // Fallback or empty state
+             categoryValue.total = 1
+             categoryValue.used = 0
+             categoryValue.free = 0
         }
 
         let total: Double = categoryValue.total == 0 ? 1 : categoryValue.total
@@ -424,10 +420,9 @@ public class RAM: Module {
 
         if self.systemWidgetsUpdatesState {
             if #available(macOS 11.0, *) {
-                if isWidgetActive(self.userDefaults, [RAM_entry.kind, "UnitedWidget"]),
-                    let blobData = try? JSONEncoder().encode(categoryValue)
-                {
-                    self.userDefaults?.set(blobData, forKey: "RAM@UsageReader")
+                // Export aggregated data (categoryValue) instead of local only (value)
+                if let blobData = try? JSONEncoder().encode(categoryValue) {
+                    self.exportWidgetData(blobData, forKey: "RAM@UsageReader")
                 }
                 WidgetCenter.shared.reloadTimelines(ofKind: RAM_entry.kind)
                 WidgetCenter.shared.reloadTimelines(ofKind: "UnitedWidget")

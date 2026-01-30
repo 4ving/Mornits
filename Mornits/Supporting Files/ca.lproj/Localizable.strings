@@ -872,7 +872,7 @@
 
 "Percentage inside the icon" = "Percentatge dins de la icona";
 
-"Colorize battery" = "Acoloreix la bateria";
+"Colorize battery" = "Acolorir la bateria";
 
 "Charging current" = "Corrent de càrrega";
 
@@ -966,5 +966,11 @@
 
 "Indigo" = "Indi";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Processos combinats";
+"Used color" = "Color de l'ús";
+
+// GPU/RAM/Net updates
+"Render" = "Renderització";
+"Tiler" = "Mosaic";
+"Local Pressure level" = "Nivell de pressió local";
+"Upload" = "Pujada";

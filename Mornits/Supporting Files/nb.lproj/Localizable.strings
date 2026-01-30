@@ -30,7 +30,7 @@
 
 "Open Sensors settings" = "Åpne sensorinnstillinger";
 
-"Network" = "Network";
+"Network" = "Nettverk";
 
 "Open Network settings" = "Åpne nettverksinnstillinger";
 
@@ -874,9 +874,9 @@
 
 "Colorize battery" = "Fargelegg batteri";
 
-"Charging current" = "Charging current";
+"Charging current" = "Ladestrøm";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "Ladespenning";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "Indigo";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Kombinerte prosesser";
+"Used color" = "Brukt farge";
+
+// GPU/RAM/Net updates
+"Render" = "Gjengivelse";
+"Tiler" = "Tiler";
+"Local Pressure level" = "Lokalt trykknivå";

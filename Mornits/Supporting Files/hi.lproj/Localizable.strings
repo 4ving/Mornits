@@ -142,7 +142,7 @@
 
 "Warning" = "Warning";
 
-"Critical" = "Critical";
+"Critical" = "महत्वपूर्ण";
 
 "Usage" = "Usage";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "आइकन के अंदर प्रतिशत";
 
-"Colorize battery" = "रंगीन बैटरी";
+"Colorize battery" = "बैटरी को रंग दें";
 
-"Charging current" = "Charging current";
+"Charging current" = "चार्जिंग करंट";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "चार्जिंग वोल्टेज";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "इंडिगो";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "संयुक्त प्रक्रियाएं";
+"Used color" = "प्रयुक्त रंग";
+
+// GPU/RAM/Net updates
+"Render" = "रेंडर";
+"Tiler" = "टाइलर";
+"Local Pressure level" = "स्थानीय दबाव स्तर";

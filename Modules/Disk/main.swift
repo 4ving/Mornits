@@ -486,10 +486,8 @@ public class Disk: Module {
 
         if self.systemWidgetsUpdatesState {
             if #available(macOS 11.0, *) {
-                if isWidgetActive(self.userDefaults, [Disk_entry.kind, "UnitedWidget"]),
-                    let blobData = try? JSONEncoder().encode(d)
-                {
-                    self.userDefaults?.set(blobData, forKey: "Disk@CapacityReader")
+                if let blobData = try? JSONEncoder().encode(d) {
+                    self.exportWidgetData(blobData, forKey: "Disk@CapacityReader")
                 }
                 WidgetCenter.shared.reloadTimelines(ofKind: Disk_entry.kind)
                 WidgetCenter.shared.reloadTimelines(ofKind: "UnitedWidget")

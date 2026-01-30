@@ -10,11 +10,15 @@
 
 ---
 
+<p align="center">
+  <b>English</b> | <a href="README_zh.md">简体中文</a>
+</p>
+
 # Mornits
 
 <a href="https://github.com/4ving/mornits/releases"><p align="center"><img src="https://github.com/4ving/Mornits/blob/main/Mornits/Supporting%20Files/Assets.xcassets/AppIcon.appiconset/icon_256x256.png" width="120"></p></a>
 
-![Mornits screenshot](https://github.com/user-attachments/assets/43c39907-47d6-4a0b-92eb-fc0ba394fd65)
+![Mornits screenshot](https://github.com/user-attachments/assets/cec7f89d-b8fb-4473-b695-4123ad67a003)
 
 macOS and remote Linux system monitor in your menu bar
 

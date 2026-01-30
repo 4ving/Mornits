@@ -118,7 +118,7 @@
 
 "Scaling" = "Scaling";
 
-"Linear" = "Linear";
+"Linear" = "線形";
 
 "Square" = "Square";
 
@@ -138,11 +138,11 @@
 
 "Turn off" = "停止";
 
-"Normal" = "Normal";
+"Normal" = "正常";
 
-"Warning" = "Warning";
+"Warning" = "警告";
 
-"Critical" = "Critical";
+"Critical" = "重要";
 
 "Usage" = "Usage";
 
@@ -156,11 +156,11 @@
 
 "Export" = "Export";
 
-"Separator" = "Separator";
+"Separator" = "区切り";
 
-"Read" = "Read";
+"Read" = "読み込み";
 
-"Write" = "Write";
+"Write" = "書き込み";
 
 "Frequency" = "Frequency";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "Percentage inside the icon";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "バッテリーを着色";
 
-"Charging current" = "Charging current";
+"Charging current" = "充電電流";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "充電電圧";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "システムインディゴ";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "結合されたプロセス";
+"Used color" = "使用色";
+
+// GPU/RAM/Net updates
+"Render" = "レンダリング";
+"Tiler" = "タイラー";
+"Local Pressure level" = "ローカル圧力レベル";

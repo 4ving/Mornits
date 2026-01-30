@@ -46,8 +46,7 @@ public struct Provider: TimelineProvider {
     public typealias Entry = RAM_entry
 
     private let userDefaults: UserDefaults? = UserDefaults(
-        suiteName:
-            "\(Bundle.main.object(forInfoDictionaryKey: "TeamId") as! String).com.4ving.Mornits.widgets"
+        suiteName: "group.com.4ving.Mornits.shared"
     )
 
     public func placeholder(in context: Context) -> RAM_entry {
@@ -61,13 +60,41 @@ public struct Provider: TimelineProvider {
     public func getTimeline(
         in context: Context, completion: @escaping (Timeline<RAM_entry>) -> Void
     ) {
-        self.userDefaults?.set(Date().timeIntervalSince1970, forKey: RAM_entry.kind)
         var entry = RAM_entry()
-        if let raw = userDefaults?.data(forKey: "RAM@UsageReader"),
-            let load = try? JSONDecoder().decode(RAM_Usage.self, from: raw)
+        var loaded = false
+
+
+        // Strategy 1: Manual File Read (Bypasses CFPrefs caching)
+        if let containerURL = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: "N7LBX474DC.group.com.4ving.Mornits.shared")
         {
-            entry.value = load
+            let plistURL = containerURL.appendingPathComponent("Library/Preferences/group.com.4ving.Mornits.shared.plist")
+            if let data = try? Data(contentsOf: plistURL) {
+                if let dict = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] {
+                    if let rawData = dict["RAM@UsageReader"] as? Data {
+                         if let load = try? JSONDecoder().decode(RAM_Usage.self, from: rawData) {
+                            entry.value = load
+                            loaded = true
+                         }
+                    }
+                }
+            }
+        } else {
+            // debugMsg = "No Container"
         }
+
+        if !loaded {
+            if let raw = userDefaults?.data(forKey: "RAM@UsageReader"),
+                let load = try? JSONDecoder().decode(RAM_Usage.self, from: raw)
+            {
+                entry.value = load
+                loaded = true
+            }
+        }
+        
+        // If still failed, you can inspect 'debugMsg' if we added a debug view. 
+        // For now, we trust the logic.
+
         let entries: [RAM_entry] = [entry]
         completion(Timeline(entries: entries, policy: .atEnd))
     }
@@ -130,8 +157,8 @@ public struct RAMWidget: Widget {
                             Text(Units(bytes: Int64(value.free)).getReadableMemory(style: .memory))
                         }
                         HStack {
-                            Text(localizedString("Pressure level")).font(
-                                .system(size: 12, weight: .regular)
+                            Text(localizedString("Local Pressure level")).font(
+                                .system(size: 11, weight: .regular)
                             ).foregroundColor(.secondary)
                             Spacer()
                             Text("\(value.pressure.level)")

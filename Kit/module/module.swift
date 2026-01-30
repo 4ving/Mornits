@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import WidgetKit
 
 public struct module_c {
     public var name: String = ""
@@ -83,9 +84,14 @@ open class Module {
         set { Store.shared.set(key: "\(self.name)_position", value: newValue) }
     }
     public var userDefaults: UserDefaults? = UserDefaults(
-        suiteName:
-            "\(Bundle.main.object(forInfoDictionaryKey: "TeamId") as! String).com.4ving.Mornits.widgets"
-    )
+        suiteName: "group.com.4ving.Mornits.shared"
+    ) {
+        didSet {
+             if #available(macOS 14.0, *) {
+                 WidgetCenter.shared.reloadAllTimelines()
+             }
+        }
+    }
 
     public var popupKeyboardShortcut: [UInt16] { self.popupView?.keyboardShortcut ?? [] }
 
@@ -352,6 +358,58 @@ open class Module {
             NotificationCenter.default.post(
                 name: .toggleModule, object: nil,
                 userInfo: ["module": self.config.name, "state": true])
+        }
+    }
+
+    private static let widgetExportQueue = DispatchQueue(label: "com.4ving.Mornits.widgetExport", qos: .utility)
+
+    public func exportWidgetData(_ value: Any?, forKey key: String) {
+        Module.widgetExportQueue.sync {
+            let appGroupID = "N7LBX474DC.group.com.4ving.Mornits.shared"
+            guard let containerURL = FileManager.default.containerURL(
+                forSecurityApplicationGroupIdentifier: appGroupID)
+            else {
+                print("ERROR: containerURL is NIL for \(appGroupID)")
+                return
+            }
+
+            let prefsDir = containerURL.appendingPathComponent("Library/Preferences")
+            let plistURL = prefsDir.appendingPathComponent("group.com.4ving.Mornits.shared.plist")
+
+            do {
+                if !FileManager.default.fileExists(atPath: prefsDir.path) {
+                    // print("DEBUG: Creating Preferences directory at \(prefsDir.path)")
+                    try FileManager.default.createDirectory(at: prefsDir, withIntermediateDirectories: true, attributes: nil)
+                }
+            } catch {
+                print("ERROR: Failed to create Preferences directory: \(error)")
+            }
+
+            var dict: [String: Any] = [:]
+            if let data = try? Data(contentsOf: plistURL) {
+                if let existing = try? PropertyListSerialization.propertyList(
+                    from: data, options: [], format: nil) as? [String: Any] {
+                    dict = existing
+                }
+            }
+
+            if let v = value {
+                dict[key] = v
+            } else {
+                dict.removeValue(forKey: key)
+            }
+
+            do {
+                let data = try PropertyListSerialization.data(fromPropertyList: dict, format: .binary, options: 0)
+                try data.write(to: plistURL)
+                // print("DEBUG: Successfully wrote \(key) to \(plistURL.path)")
+            } catch {
+                print("ERROR: Failed to write plist: \(error)")
+            }
+        }
+
+        if #available(macOS 14.0, *) {
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
 }

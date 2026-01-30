@@ -42,9 +42,9 @@
 
 "Open Bluetooth settings" = "เปิดการตั้งค่าบลูทูธ";
 
-"Clock" = "Clock";
+"Clock" = "นาฬิกา";
 
-"Open Clock settings" = "Open clock settings";
+"Open Clock settings" = "เปิดการตั้งค่านาฬิกา";
 
 
 // Words
@@ -132,61 +132,61 @@
 
 "Settings" = "การตั้งค่า";
 
-"Name" = "Name";
+"Name" = "ชื่อ";
 
-"Format" = "Format";
+"Format" = "รูปแบบ";
 
-"Turn off" = "Turn off";
+"Turn off" = "ปิด";
 
-"Normal" = "Normal";
+"Normal" = "ปกติ";
 
-"Warning" = "Warning";
+"Warning" = "คำเตือน";
 
-"Critical" = "Critical";
+"Critical" = "วิกฤต";
 
-"Usage" = "Usage";
+"Usage" = "การใช้งาน";
 
-"2 minutes" = "2 minutes";
+"2 minutes" = "2 นาที";
 
-"3 minutes" = "3 minutes";
+"3 minutes" = "3 นาที";
 
-"10 minutes" = "10 minutes";
+"10 minutes" = "10 นาที";
 
-"Import" = "Import";
+"Import" = "นำเข้า";
 
-"Export" = "Export";
+"Export" = "ส่งออก";
 
-"Separator" = "Separator";
+"Separator" = "ตัวคั่น";
 
-"Read" = "Read";
+"Read" = "อ่าน";
 
-"Write" = "Write";
+"Write" = "เขียน";
 
-"Frequency" = "Frequency";
+"Frequency" = "ความถี่";
 
-"Save" = "Save";
+"Save" = "บันทึก";
 
-"Run" = "Run";
+"Run" = "รัน";
 
-"Stop" = "Stop";
+"Stop" = "หยุด";
 
-"Uninstall" = "Uninstall";
+"Uninstall" = "ถอนการติดตั้ง";
 
-"1 sec" = "1 sec";
+"1 sec" = "1 วินาที";
 
-"2 sec" = "2 sec";
+"2 sec" = "2 วินาที";
 
-"3 sec" = "3 sec";
+"3 sec" = "3 วินาที";
 
-"5 sec" = "5 sec";
+"5 sec" = "5 วินาที";
 
-"10 sec" = "10 sec";
+"10 sec" = "10 วินาที";
 
-"15 sec" = "15 sec";
+"15 sec" = "15 วินาที";
 
-"30 sec" = "30 sec";
+"30 sec" = "30 วินาที";
 
-"60 sec" = "60 sec";
+"60 sec" = "60 วินาที";
 
 
 // Setup
@@ -224,11 +224,11 @@
 
 "Never check for updates (not recommended)" = "ไม่เช็คการอัปเดต (ไม่แนะนำ)";
 
-"Anonymous telemetry for better development decisions" = "Anonymous telemetry for better development decisions";
+"Anonymous telemetry for better development decisions" = "ส่งข้อมูลการใช้งานแบบไม่ระบุตัวตนเพื่อการพัฒนา";
 
-"Share anonymous telemetry data" = "Share anonymous telemetry data";
+"Share anonymous telemetry data" = "แชร์ข้อมูล telemetry";
 
-"Do not share anonymous telemetry data" = "Do not share anonymous telemetry data";
+"Do not share anonymous telemetry data" = "ไม่แชร์ข้อมูล telemetry";
 
 "The configuration is completed" = "การกำหนดค่าเสร็จสมบูรณ์";
 
@@ -262,11 +262,11 @@
 
 "Open dashboard" = "เปิดแดชบอร์ด";
 
-"No notifications available in this module" = "No notifications available in this module";
+"No notifications available in this module" = "ไม่มีการแจ้งเตือนในโมดูลนี้";
 
-"Open Calendar" = "Open Calendar";
+"Open Calendar" = "เปิดปฏิทิน";
 
-"Toggle the module" = "Toggle the module";
+"Toggle the module" = "สลับโมดูล";
 
 
 // Application settings
@@ -274,15 +274,15 @@
 
 "Check for updates" = "ตรวจสอบการอัพเดท";
 
-"At start" = "เริ่มต้น";
+"At start" = "เมื่อเริ่มต้น";
 
-"Once per day" = "ครั้งละ 1 วัน";
+"Once per day" = "วันละครั้ง";
 
-"Once per week" = "ครั้งละ 1 สัปดาห์";
+"Once per week" = "สัปดาห์ละครั้ง";
 
-"Once per month" = "ครั้งละ 1 เดือน";
+"Once per month" = "เดือนละครั้ง";
 
-"Never" = "ไม่เคย";
+"Never" = "ไม่เลย";
 
 "Check for update" = "ตรวจสอบการอัพเดท";
 
@@ -292,49 +292,49 @@
 
 "Build number" = "หมายเลข Build";
 
-"Import settings" = "Import settings";
+"Import settings" = "นำเข้าการตั้งค่า";
 
-"Export settings" = "Export settings";
+"Export settings" = "ส่งออกการตั้งค่า";
 
 "Reset settings" = "รีเซ็ตการตั้งค่า";
 
-"Pause the Stats" = "หยุด Mornits";
+"Pause the Stats" = "หยุด Mornits ชั่วคราว";
 
-"Resume the Stats" = "เริ่มต้น Mornits";
+"Resume the Stats" = "ทำต่อ Mornits";
 
 "Combined modules" = "โมดูลผสม";
 
-"Combined details" = "Combined details";
+"Combined details" = "รายละเอียดรวม";
 
-"Spacing" = "Spacing";
+"Spacing" = "ระยะห่าง";
 
-"Share anonymous telemetry" = "Share anonymous telemetry";
+"Share anonymous telemetry" = "แชร์ข้อมูล telemetry";
 
-"Choose file" = "Choose file";
+"Choose file" = "เลือกไฟล์";
 
-"Stress tests" = "Stress tests";
+"Stress tests" = "ทดสอบความเครียด";
 
 
 // Dashboard
 "Serial number" = "หมายเลขซีเรียล";
 
-"Model identifier" = "Model identifier";
+"Model identifier" = "ระบุโมเดล";
 
-"Production year" = "Production year";
+"Production year" = "ปีที่ผลิต";
 
 "Uptime" = "ระยะเวลาที่เครื่องทำงาน";
 
-"Number of cores" = "%0 cores";
+"Number of cores" = "%0 คอร์";
 
-"Number of threads" = "%0 thread";
+"Number of threads" = "%0 เธรด";
 
-"Number of e-cores" = "%0 cores ประสิทธิภาพ";
+"Number of e-cores" = "%0 E-cores";
 
-"Number of p-cores" = "%0 cores ประสิทธิผล";
+"Number of p-cores" = "%0 P-cores";
 
-"Disks" = "Disks";
+"Disks" = "ดิสก์";
 
-"Display" = "Display";
+"Display" = "จอภาพ";
 
 
 // Update
@@ -388,7 +388,7 @@
 
 "Battery widget" = "แบตเตอรี่";
 
-"Stack widget" = "Stack";
+"Stack widget" = "วิดเจ็ตซ้อน";
 
 "Memory widget" = "หน่วยความจำ";
 
@@ -398,9 +398,9 @@
 
 "State widget" = "เครื่องวัดสถานะ";
 
-"Text widget" = "Text widget";
+"Text widget" = "วิดเจ็ตข้อความ";
 
-"Battery details widget" = "Battery details widget";
+"Battery details widget" = "วิดเจ็ตรายละเอียดแบตเตอรี่";
 
 "Show symbols" = "แสดงสัญลักษณ์";
 
@@ -414,15 +414,15 @@
 
 "Monospaced font" = "แบบอักษรโมโนสเปซ";
 
-"Reverse order" = "Reverse order";
+"Reverse order" = "ย้อนลำดับ";
 
-"Chart history" = "Chart history";
+"Chart history" = "ประวัติกราฟ";
 
-"Default color" = "Default";
+"Default color" = "สีเริ่มต้น";
 
-"Transparent when no activity" = "Transparent when no activity";
+"Transparent when no activity" = "โปร่งใสเมื่อไม่มีกิจกรรม";
 
-"Constant color" = "Constant";
+"Constant color" = "สีคงที่";
 
 
 // Module Kit
@@ -456,13 +456,13 @@
 
 "No options to configure for the popup in this module" = "ไม่มีตัวเลือกที่สามารถกำหนดค่าสำหรับป๊อปอัปในโมดูลนี้";
 
-"Process" = "Process";
+"Process" = "กระบวนการ";
 
-"Kill process" = "Kill process";
+"Kill process" = "ปิดกระบวนการ";
 
-"Keyboard shortcut" = "Keyboard shortcut";
+"Keyboard shortcut" = "คีย์ลัด";
 
-"Listening..." = "Listening...";
+"Listening..." = "กำลังฟัง...";
 
 
 // Modules
@@ -474,11 +474,11 @@
 
 "Chart color" = "สีแผนภูมิ";
 
-"Main chart scaling" = "Main chart scaling";
+"Main chart scaling" = "ขนาดกราฟหลัก";
 
-"Scale value" = "Scale value";
+"Scale value" = "ค่าสเกล";
 
-"Text widget value" = "Text widget value";
+"Text widget value" = "ค่าข้อความวิดเจ็ต";
 
 
 // CPU
@@ -528,21 +528,21 @@
 
 "Cluster grouping" = "การจัดกลุ่ม Cluster";
 
-"Efficiency cores color" = "Efficiency cores color";
+"Efficiency cores color" = "สี E-cores";
 
-"Performance cores color" = "Performance cores color";
+"Performance cores color" = "สี P-cores";
 
-"Total load" = "Total load";
+"Total load" = "โหลดทั้งหมด";
 
-"System load" = "System load";
+"System load" = "โหลดระบบ";
 
-"User load" = "User load";
+"User load" = "โหลดผู้ใช้";
 
-"Efficiency cores load" = "Efficiency cores load";
+"Efficiency cores load" = "โหลด E-cores";
 
-"Performance cores load" = "Performance cores load";
+"Performance cores load" = "โหลด P-cores";
 
-"All cores" = "All cores";
+"All cores" = "ทุกคอร์";
 
 
 // GPU
@@ -692,7 +692,7 @@
 
 "You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?";
 
-"Sensor threshold" = "Sensor threshold";
+"Sensor threshold" = "เกณฑ์เซ็นเซอร์";
 
 "Left fan" = "Left";
 
@@ -700,7 +700,7 @@
 
 "Fastest fan" = "Fastest";
 
-"Sensor to show" = "Sensor to show";
+"Sensor to show" = "เซ็นเซอร์ที่แสดง";
 
 
 // Network
@@ -766,37 +766,37 @@
 
 "Leave empty to disable the check" = "เว้นว่างไว้เพื่อปิดการตรวจสอบ";
 
-"Connectivity history" = "Connectivity history";
+"Connectivity history" = "ประวัติการเชื่อมต่อ";
 
-"Auto-refresh public IP address" = "Auto-refresh public IP address";
+"Auto-refresh public IP address" = "รีเฟรช IP สาธารณะอัตโนมัติ";
 
-"Every hour" = "Every hour";
+"Every hour" = "ทุกชั่วโมง";
 
-"Every 12 hours" = "Every 12 hours";
+"Every 12 hours" = "ทุก 12 ชั่วโมง";
 
-"Every 24 hours" = "Every 24 hours";
+"Every 24 hours" = "ทุก 24 ชั่วโมง";
 
-"Network activity" = "Network activity";
+"Network activity" = "กิจกรรมเครือข่าย";
 
-"Last reset" = "Last reset %0 ago";
+"Last reset" = "รีเซ็ตล่าสุด %0 ที่แล้ว";
 
-"Latency" = "Latency";
+"Latency" = "ความหน่วง";
 
 "Upload speed" = "Upload";
 
 "Download speed" = "Download";
 
-"Address" = "Address";
+"Address" = "ที่อยู่";
 
-"WiFi network" = "WiFi network";
+"WiFi network" = "เครือข่าย WiFi";
 
-"Local IP changed" = "Local IP has changed";
+"Local IP changed" = "Local IP เปลี่ยนดแปลง";
 
-"Public IP changed" = "Public IP has changed";
+"Public IP changed" = "Public IP เปลี่ยนแปลง";
 
-"Previous IP" = "Previous IP: %0";
+"Previous IP" = "IP ก่อนหน้า: %0";
 
-"New IP" = "New IP: %0";
+"New IP" = "IP ใหม่: %0";
 
 "Internet connection lost" = "Internet connection lost";
 
@@ -872,11 +872,11 @@
 
 "Percentage inside the icon" = "เปอร์เซ็นต์ภายในไอคอน";
 
-"Colorize battery" = "Colorize battery";
+"Colorize battery" = "เพิ่มสีสันให้แบตเตอรี่";
 
-"Charging current" = "Charging current";
+"Charging current" = "กระแสไฟชาร์จ";
 
-"Charging Voltage" = "Charging voltage";
+"Charging Voltage" = "แรงดันไฟชาร์จ";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,10 @@
 
 "Indigo" = "น้ำเงินม่วง";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "กระบวนการรวม";
+"Used color" = "สีที่ใช้";
+
+// GPU/RAM/Net updates
+"Render" = "เรนเดอร์";
+"Tiler" = "ไทเลอร์";
+"Local Pressure level" = "ระดับแรงกดดันภายใน";

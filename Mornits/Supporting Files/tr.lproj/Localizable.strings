@@ -876,7 +876,7 @@
 
 "Charging current" = "Şarj akımı";
 
-"Charging Voltage" = "Şarj Voltajı";
+"Charging Voltage" = "Şarj voltajı";
 
 "Charger state inside the battery" = "Charger state inside the battery";
 
@@ -966,5 +966,11 @@
 
 "Indigo" = "Çivit";
 
-"Combined processes" = "Combined processes";
-"Used color" = "Used color";
+"Combined processes" = "Birleşik süreçler";
+"Used color" = "Kullanılan renk";
+
+// GPU/RAM/Net updates
+"Render" = "İşleme";
+"Tiler" = "Döşeyici";
+"Local Pressure level" = "Yerel Basınç seviyesi";
+"Upload" = "Yükleme";

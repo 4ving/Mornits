@@ -71,6 +71,14 @@ public class Store {
         return self.getValue(for: key, type: [Any].self) ?? value
     }
     
+    public func int64(key: String, defaultValue value: Int64) -> Int64 {
+        return self.getValue(for: key, type: Int64.self) ?? value
+    }
+    
+    public func double(key: String, defaultValue value: Double) -> Double {
+        return self.getValue(for: key, type: Double.self) ?? value
+    }
+    
     public func data(key: String) -> Data? {
         return self.getValue(for: key, type: Data.self)
     }

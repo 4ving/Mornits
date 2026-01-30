@@ -35,8 +35,7 @@ public struct Provider: TimelineProvider {
     public typealias Entry = Network_entry
 
     private let userDefaults: UserDefaults? = UserDefaults(
-        suiteName:
-            "\(Bundle.main.object(forInfoDictionaryKey: "TeamId") as! String).com.4ving.Mornits.widgets"
+        suiteName: "group.com.4ving.Mornits.shared"
     )
 
     public func placeholder(in context: Context) -> Network_entry {
@@ -50,13 +49,46 @@ public struct Provider: TimelineProvider {
     public func getTimeline(
         in context: Context, completion: @escaping (Timeline<Network_entry>) -> Void
     ) {
-        self.userDefaults?.set(Date().timeIntervalSince1970, forKey: Network_entry.kind)
         var entry = Network_entry()
-        if let raw = userDefaults?.data(forKey: "Network@UsageReader"),
-            let load = try? JSONDecoder().decode(Network_Usage.self, from: raw)
+        var loaded = false
+        
+        if let containerURL = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: "N7LBX474DC.group.com.4ving.Mornits.shared")
         {
-            entry.value = load
+            let plistURL = containerURL.appendingPathComponent("Library/Preferences/group.com.4ving.Mornits.shared.plist")
+            if let data = try? Data(contentsOf: plistURL) {
+                if let dict = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] {
+                    if let rawData = dict["Network@UsageReader"] as? Data {
+                         if let load = try? JSONDecoder().decode(Network_Usage.self, from: rawData) {
+                            entry.value = load
+                            loaded = true
+                         }
+                    }
+                }
+            }
         }
+
+        if !loaded {
+            if let raw = userDefaults?.data(forKey: "Network@UsageReader"),
+                let load = try? JSONDecoder().decode(Network_Usage.self, from: raw)
+            {
+                entry.value = load
+            }
+        }
+        
+        // Compute speed
+        if let current = entry.value {
+            // TODO: partial logic from original code, currently unused.
+            // let lastSpeed = Store.shared.int64(key: "Network_lastSpeed", defaultValue: 0)
+            // let currentSpeed = current.bandwidth.upload + current.bandwidth.download
+            // let now = Date().timeIntervalSince1970
+            // let lastTime = Store.shared.double(key: "Network_lastTime", defaultValue: now)
+            
+            // Simple logic to just use current speed, or more complex if needed.
+            // For now, we just pass the value.
+            entry.value = current
+        }
+
         let entries: [Network_entry] = [entry]
         completion(Timeline(entries: entries, policy: .atEnd))
     }
@@ -77,6 +109,16 @@ public struct NetworkWidget: Widget {
                         HStack {
                             VStack {
                                 VStack(spacing: 0) {
+                                    Text(Units(bytes: value.bandwidth.upload).getReadableTuple().0)
+                                        .font(.system(size: 24, weight: .regular))
+                                    Text(Units(bytes: value.bandwidth.upload).getReadableTuple().1)
+                                        .font(.system(size: 10, weight: .regular))
+                                }
+                                Text(localizedString("Upload")).font(.system(size: 12, weight: .regular))
+                                    .foregroundColor(.gray)
+                            }.frame(maxWidth: .infinity)
+                            VStack {
+                                VStack(spacing: 0) {
                                     Text(
                                         Units(bytes: value.bandwidth.download).getReadableTuple().0
                                     ).font(.system(size: 24, weight: .regular))
@@ -84,50 +126,25 @@ public struct NetworkWidget: Widget {
                                         Units(bytes: value.bandwidth.download).getReadableTuple().1
                                     ).font(.system(size: 10, weight: .regular))
                                 }
-                                Text("Download").font(.system(size: 12, weight: .regular))
-                                    .foregroundColor(.gray)
-                            }.frame(maxWidth: .infinity)
-                            VStack {
-                                VStack(spacing: 0) {
-                                    Text(Units(bytes: value.bandwidth.upload).getReadableTuple().0)
-                                        .font(.system(size: 24, weight: .regular))
-                                    Text(Units(bytes: value.bandwidth.upload).getReadableTuple().1)
-                                        .font(.system(size: 10, weight: .regular))
-                                }
-                                Text("Upload").font(.system(size: 12, weight: .regular))
+                                Text(localizedString("Download")).font(.system(size: 12, weight: .regular))
                                     .foregroundColor(.gray)
                             }.frame(maxWidth: .infinity)
                         }
                         .frame(maxHeight: .infinity)
                         VStack(spacing: 3) {
                             HStack {
-                                Text("Status").font(.system(size: 12, weight: .regular))
+                                Text(localizedString("Total upload")).font(.system(size: 10, weight: .regular))
                                     .foregroundColor(.secondary)
                                 Spacer()
-                                Text(value.status ? "UP" : "DOWN")
-                            }
-                            if let interface = value.interface {
-                                HStack {
-                                    Text("Interface").font(.system(size: 12, weight: .regular))
-                                        .foregroundColor(.secondary)
-                                    Spacer()
-                                    Text(value.wifiDetails.ssid ?? interface.displayName)
-                                }
+                                Text(Units(bytes: value.total.upload).getReadableMemory(style: .file))
+                                    .font(.system(size: 10))
                             }
                             HStack {
-                                Text("IP").font(.system(size: 12, weight: .regular))
+                                Text(localizedString("Total download")).font(.system(size: 10, weight: .regular))
                                     .foregroundColor(.secondary)
                                 Spacer()
-                                if let raddr = value.raddr.v6 {
-                                    Text(raddr)
-                                        .font(.system(size: 8))
-                                        .multilineTextAlignment(.trailing)
-                                        .frame(maxWidth: .infinity, alignment: .center)
-                                } else if let raddr = value.raddr.v4 {
-                                    Text(raddr)
-                                } else {
-                                    Text("Unknown")
-                                }
+                                Text(Units(bytes: value.total.download).getReadableMemory(style: .file))
+                                    .font(.system(size: 10))
                             }
                         }
                     }
